@@ -83,34 +83,22 @@ body, body * {
   left: 500px;
 }
 .container :nth-child(5) {
-  -moz-transform: translateZ(-2px) scale(3);
-  -ms-transform: translateZ(-2px) scale(3);
-  -webkit-transform: translateZ(-2px) scale(3);
-  transform: translateZ(-2px) scale(3);
   z-index: -2000;
-  max-width: 20%;
-  top: 2000px;
-  left: 0px;
+  max-width: 25%;
+  top: 425px;
+  left: 35%;
 }
 .container :nth-child(6) {
-  -moz-transform: translateZ(0.4px) scale(0.6);
-  -ms-transform: translateZ(0.4px) scale(0.6);
-  -webkit-transform: translateZ(0.4px) scale(0.6);
-  transform: translateZ(0.4px) scale(0.6);
   z-index: 400;
-  max-width: 20%;
-  top: 600px;
-  left: 0px;
+  max-width: 25%;
+  top: 425px;
+  left: 0%;
 }
 .container :nth-child(7) {
-  -moz-transform: translateZ(-1px) scale(2);
-  -ms-transform: translateZ(-1px) scale(2);
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2);
   z-index: -1000;
-  max-width: 20%;
-  top: 400px;
-  left: 0px;
+  max-width: 25%;
+  top: 425px;
+  left: 70%;
 }
 
 .container > * {
@@ -142,4 +130,6 @@ h2 {
   transform: translateZ(0.2px) scale(0.8);
   z-index: 200;
 }
-
+.projectTitle {
+  margin-top: 200px;
+}
