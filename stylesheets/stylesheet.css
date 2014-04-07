@@ -87,18 +87,21 @@ body, body * {
   max-width: 25%;
   top: 425px;
   left: 35%;
+  border: 2px solid black;
 }
 .container :nth-child(6) {
   z-index: 400;
   max-width: 25%;
   top: 425px;
   left: 0%;
+  border: 2px solid black;
 }
 .container :nth-child(7) {
   z-index: -1000;
   max-width: 25%;
   top: 425px;
   left: 70%;
+  border: 2px solid black;
 }
 
 .container > * {
@@ -130,6 +133,17 @@ h2 {
   transform: translateZ(0.2px) scale(0.8);
   z-index: 200;
 }
-.projectTitle {
-  margin-top: 200px;
+#seatTitle {
+  margin-top: 115px;
+  margin-left: 25%;
+}
+
+#comparisonTitle {
+  margin-top: -15px;
+  margin-left: 45.7%;
+}
+
+#pawTitle {
+  margin-top: -15px;
+  margin-left: 68.6%;
 }
