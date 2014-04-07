@@ -36,7 +36,7 @@ body, body * {
   top: 200px;
   left: 200px;
 }
-.container :nth-child(1) {
+/*.container :nth-child(1) {
   -moz-transform: translateZ(-0.4px) scale(1.4);
   -ms-transform: translateZ(-0.4px) scale(1.4);
   -webkit-transform: translateZ(-0.4px) scale(1.4);
@@ -54,6 +54,7 @@ body, body * {
   top: 200px;
   left: 200px;
 }
+*/
 .container :nth-child(2) {
   -moz-transform: translateZ(0.2px) scale(0.8);
   -ms-transform: translateZ(0.2px) scale(0.8);
@@ -87,8 +88,9 @@ body, body * {
   -webkit-transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
   z-index: -2000;
+  max-width: 20%;
   top: 2000px;
-  left: 2000px;
+  left: 0px;
 }
 .container :nth-child(6) {
   -moz-transform: translateZ(0.4px) scale(0.6);
@@ -96,8 +98,9 @@ body, body * {
   -webkit-transform: translateZ(0.4px) scale(0.6);
   transform: translateZ(0.4px) scale(0.6);
   z-index: 400;
+  max-width: 20%;
   top: 600px;
-  left: 300px;
+  left: 0px;
 }
 .container :nth-child(7) {
   -moz-transform: translateZ(-1px) scale(2);
@@ -105,36 +108,11 @@ body, body * {
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   z-index: -1000;
+  max-width: 20%;
   top: 400px;
-  left: 1000px;
+  left: 0px;
 }
-.container :nth-child(8) {
-  -moz-transform: translateZ(-0.4px) scale(1.4);
-  -ms-transform: translateZ(-0.4px) scale(1.4);
-  -webkit-transform: translateZ(-0.4px) scale(1.4);
-  transform: translateZ(-0.4px) scale(1.4);
-  z-index: -400;
-  top: 100px;
-  left: 1400px;
-}
-.container :nth-child(9) {
-  -moz-transform: translateZ(0.4px) scale(0.6);
-  -ms-transform: translateZ(0.4px) scale(0.6);
-  -webkit-transform: translateZ(0.4px) scale(0.6);
-  transform: translateZ(0.4px) scale(0.6);
-  z-index: 400;
-  top: 900px;
-  left: 500px;
-}
-.container :nth-child(10) {
-  -moz-transform: translateZ(-1px) scale(2);
-  -ms-transform: translateZ(-1px) scale(2);
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2);
-  z-index: -1000;
-  top: 1600px;
-  left: 100px;
-}
+
 .container > * {
   position: absolute;
 }
