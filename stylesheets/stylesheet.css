@@ -4,7 +4,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 body {
@@ -49,7 +48,7 @@ h2 {
 
 .projectImage {
   max-width: 300px;
-  border: 2px solid;
+  border: 2px solid black;
   margin-left: 15px;
   
 }
@@ -74,4 +73,15 @@ h2 {
   padding: 30px;
   margin: auto;
 
+}
+
+.summaryContainer {
+  position: fixed;
+}
+
+
+.summary {
+  padding: 30px;
+  padding-right: 25%;
+  padding-left: 25%;
 }
