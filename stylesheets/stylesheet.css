@@ -34,6 +34,7 @@ h2 {
 .projectContainer {
   width: 100%;
   margin-top: 20%;
+  height:150px;
   
 }
 
@@ -77,6 +78,7 @@ h2 {
 
 .summaryContainer {
   position: fixed;
+  z-index: -1;
 }
 
 
@@ -132,21 +134,27 @@ h1 {
 
 
 
-.parImage1 {
+.parImage1 h4{
   font-size: 45px;
   color: grey;
-  height: 300px;
+  height: 40px;
   border: 1px solid black ;
   float: left;
-  padding-top: 500px;
+  padding-top: 460px;
+  margin-bottom: 0px;
+  z-index: 100;
+  background-color:  #EEF1F3;
+
 }
   
 
-.parImage2 {
+.parImage2 h4{
   font-size: 45px;
   color: grey;
   height: 300px;
   float: right;
-  margin-top: -260px;
+  margin-top: 30px;
   border: 1px solid blue;
+  z-index: 100;
+  background-color:  #EEF1F3;
  } 
