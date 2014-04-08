@@ -84,4 +84,40 @@ h2 {
   padding: 30px;
   padding-right: 25%;
   padding-left: 25%;
+  animation: type 0.5s steps(60, end);  
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:10.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:10.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+body { font-family: Consolas, monospace; }
+
+h1 { 
+    font-size:150%;
+    width:10.9em;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+    
+    -webkit-animation: typing 1s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 1s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
 }
