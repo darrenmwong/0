@@ -29,14 +29,13 @@ $('.parImage1 h4').hover(function() {
     "uses strict";
     $('.parImage1 h4').slideUp('slow'); 
     console.log($('.parImage2 h4'));
-     $('.parImage2 h4').slideUp('slow');
+     $('.parImage2 h4').slideUp('slow').done
+     $('.pawProject').fadeIn('slow');
+     $('.comparisonProject').fadeIn('slow');
+     $('.seatProject').fadeIn('slow');    
+     
     });
     
-$('.parImage2 h4').click(function() {
-    console.log('down');
-    "uses strict";
-    $('.parImage2 h4').slideUp('slow');
-    });
     
 
     
