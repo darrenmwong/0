@@ -6,30 +6,95 @@ html, body {
   padding: 0;
 }
 
+
 body {
-  font-family: Roboto, sans-serif;
   font-weight: 100;
   background: #EEF1F3;
   line-height: 1;
+  font-family: Consolas, monospace;
 }
-
 h1, h2 {
   font-weight: 100;
   margin: 0;
+  
 }
 
-h1 {
-  font-size: 5em;
-  color: #1586d1;
+h1 { 
+    font-size:150%;
+    width:7.0em;
+    padding-left: 10px;
+    padding-top: 10px;
+    white-space:nowrap;
+    overflow:hidden;
+    color: #1586d1;
+    -webkit-animation: typing 0.8s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+*/
 }
 
-h2 {
-  font-size: 3em;
-  -moz-transform: translateZ(0.2px) scale(0.8);
-  -ms-transform: translateZ(0.2px) scale(0.8);
-  -webkit-transform: translateZ(0.2px) scale(0.8);
-  transform: translateZ(0.2px) scale(0.8);
-  z-index: 200;
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:7.0em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:10.3em }
+}
+
+/*@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}*/
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent } 50% { border-color: black }
+}
+
+.nav h1:hover {
+  top: 17px;
+  color: black;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  z-index: -10;
+}
+
+.line {
+  margin: 0 auto;
+  padding: 0;
+  display: none;
+  position: relative;
+  width: 2px;
+  height: 60px;
+  top: 22px;
+  opacity: 0.2;
+  background: black;
+  margin-left: 6%;
+  margin-top: -1.4%;
+  z-index: 1000;
+  
+}
+
+.box {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  position: relative;
+  width: 401px;
+  height: 0px;
+  top: 30px;
+  opacity: 0.2;
+  background: #fafafa;
+  font: 1em 'Open Sans';
+  text-align: center;
+  line-height: 30px;
+  color: #345;
+  overflow: hidden;
 }
 .projectContainer {
   width: 100%;
@@ -101,54 +166,13 @@ h2 {
   padding: 30px;
   padding-right: 25%;
   padding-left: 25%;
-  animation: type 0.5s steps(60, end);  
 }
-
-@-webkit-keyframes typing {
-    from { width: 0 }
-    to { width:10.3em }
-}
-
-@-moz-keyframes typing {
-    from { width: 0 }
-    to { width:10.3em }
-}
-
-@-webkit-keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black }
-}
-
-@-moz-keyframes blink-caret {
-    from, to { border-color: transparent } 50% { border-color: black }
-}
-
-body { font-family: Consolas, monospace; }
-
-h1 { 
-    font-size:150%;
-    width:10.9em;
-    white-space:nowrap;
-    border-right: .1em solid black;
-    
-    -webkit-animation: typing 1.8s steps(30, end), /* # of steps = # of characters */
-                        blink-caret 1s step-end infinite;
-    -moz-animation: typing 0.8s steps(30, end), /* # of steps = # of characters */
-                        blink-caret 1s step-end infinite;
-}
-
-
 .parallaxContainer {
-
   margin-top: 190px;
   margin-right: 30px;
   margin-left: 30px;
   position: absolute;
 }
-
-  
-
-
 
 .parImage1 h4{
   font-size: 45px;

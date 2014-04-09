@@ -36,5 +36,10 @@ $('.parImage1 h4').hover(function() {
     });
     
     
+$('.nav h1').hover(function () {
+  "use strict";
+  $('.line, .box').css('opacity', '1');
+  $('.line').slideDown('slow');
+    });
 
     
