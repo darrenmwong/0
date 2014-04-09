@@ -43,4 +43,8 @@ $('.nav h1').hover(function () {
   $('.box').slideDown('slow');
     });
 
-    
+$('.navClose').hover(function() {
+    "use strict";
+    console.log('touched');
+    $('.line, .box').slideUp('slow');
+    });
