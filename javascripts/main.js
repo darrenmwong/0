@@ -1,5 +1,4 @@
-console.log('WOO');
-
+/* Parallax and Images */
 $('.seatProject').hover(function() {
     "use strict";
     $('#seatImage').css('opacity', '.6');
