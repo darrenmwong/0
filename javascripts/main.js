@@ -24,13 +24,21 @@ $('.pawProject').hover(function() {
     $('#pawImage').css('opacity', '');
     });
 
-$('.parImage1 h4').click(function() {
+$('.parImage1 h4').hover(function() {
     console.log('hi');
     "uses strict";
-    $('.parImage1 h4').slideUp('slow');
-    $('.parImage2 h4').slideDown('slow');
+    $('.parImage1 h4').slideUp('slow'); 
+    console.log($('.parImage2 h4'));
+     $('.parImage2 h4').slideUp('slow');
+       /* 
+       var down = document.getElementsByClassName('parImage2')
+        console.log(down[0].innerHTML);
+            down[0].innerHTML.css('opacity');
+         });
+        */
     });
-$('.partImage2 h4').click(function() {
+    
+$('.parImage2 h4').click(function() {
     console.log('down');
     "uses strict";
     $('.parImage2 h4').slideUp('slow');
