@@ -22,20 +22,24 @@ $('.pawProject').hover(function() {
     "use strict";
     $('#pawImage').css('opacity', '');
     });
+/* Opening Head */
 
-$('.parImage1 h4').hover(function() {
-    console.log('hi');
+$('#projectNav').click(function() {
     "uses strict";
-    $('.parImage1 h4').slideUp('slow'); 
-    console.log($('.parImage2 h4'));
-     $('.parImage2 h4').slideUp('slow').done
+
+     $('.parImage1 h4').delay(400).slideUp(300); 
+     $('.parImage2 h4').delay(400).slideUp(300).done
+     $('.pawProject').delay(1200).fadeIn('slow');
+     $('.comparisonProject').delay(1200).fadeIn('slow');
+     $('.seatProject').delay(1200).fadeIn('slow')
+     parCon();
+ });
+
+var parCon = function() { 
+    setTimeout(function() {
      $('.parallaxContainer').css('z-index', '-1000');
-     $('.pawProject').fadeIn('slow');
-     $('.comparisonProject').fadeIn('slow');
-     $('.seatProject').fadeIn('slow');    
-     
-    });
-    
+    },2500);
+};
 /* Navigation */    
 $('.nav h1').hover(function () {
   "use strict";
@@ -46,7 +50,6 @@ $('.nav h1').hover(function () {
 
 $('.navClose').hover(function() {
     "use strict";
-    console.log('touched');
     $('.line, .box').slideUp('slow');
     });
 
