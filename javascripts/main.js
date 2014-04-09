@@ -24,3 +24,17 @@ $('.pawProject').hover(function() {
     $('#pawImage').css('opacity', '');
     });
 
+$('.parImage1 h4').click(function() {
+    console.log('hi');
+    "uses strict";
+    $('.parImage1 h4').slideUp('slow');
+    $('.parImage2 h4').slideDown('slow');
+    });
+$('.partImage2 h4').click(function() {
+    console.log('down');
+    "uses strict";
+    $('.parImage2 h4').slideUp('slow');
+    });
+    
+
+    
