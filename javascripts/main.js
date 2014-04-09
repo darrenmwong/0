@@ -29,13 +29,14 @@ $('.parImage1 h4').hover(function() {
     $('.parImage1 h4').slideUp('slow'); 
     console.log($('.parImage2 h4'));
      $('.parImage2 h4').slideUp('slow').done
+     $('.parallaxContainer').css('z-index', '-1000');
      $('.pawProject').fadeIn('slow');
      $('.comparisonProject').fadeIn('slow');
      $('.seatProject').fadeIn('slow');    
      
     });
     
-    
+/* Navigation */    
 $('.nav h1').hover(function () {
   "use strict";
   $('.line, .box').css('opacity', '1');

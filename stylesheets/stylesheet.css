@@ -132,7 +132,7 @@ a:active {color: black;}
   margin-top: 0%;
   height:100%;
   background:  #EEF1F3;
-  z-index: -2;
+  z-index: -100;
   
 }
 
@@ -155,34 +155,31 @@ a:active {color: black;}
   opacity: 1;  
 }
 .seatProject {
-  z-index: -2000;
   float: left;
   padding: 30px; 
   margin: auto;
   background:  #EEF1F3;
-  z-index: -2;
+  z-index: 1001;
   margin-top: 0px;
   display: none; 
 }
 
 .comparisonProject {
-  z-index: -2000;
   float: left;
   padding: 30px;
   margin: auto;
   background:  #EEF1F3;
-  z-index: -2;
+  z-index: 1001;
   margin-top: 0px;
   display: none; 
 }
 
 .pawProject  {
-  z-index: -2000;
   float: left;
   padding: 30px;
   margin: auto;
   background:  #EEF1F3;
-  z-index: -2;
+  z-index: 1001;
   margin-top: 0px;
   display: none; 
 }
@@ -208,7 +205,9 @@ a:active {color: black;}
  height: 100%;
  width: 100%;
  position: absolute ;
+ z-index: 101;
 }
+
 
 .parImage1 h4{
   font-size: 45px;
