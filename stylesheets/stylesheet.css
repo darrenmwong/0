@@ -80,6 +80,16 @@ h1 {
   
 }
 
+a:link {color: black;}      /* unvisited link */
+a:visited {color:black;}  /* visited link */
+a:hover {color: grey;}  /* mouse over link */
+a:active {color: black;}
+
+.navLinks a {
+  text-decoration: none;
+}
+
+
 .box {
   margin: 0 auto;
   padding: 0;
