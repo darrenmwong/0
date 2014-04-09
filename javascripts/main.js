@@ -40,6 +40,7 @@ $('.nav h1').hover(function () {
   "use strict";
   $('.line, .box').css('opacity', '1');
   $('.line').slideDown('slow');
+  $('.box').slideDown('slow');
     });
 
     
