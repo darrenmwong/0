@@ -73,4 +73,23 @@ setTimeout(function(){
 setTimeout(function(){
         $(".element9").css("display", "inherit");
     }, 1950);
+setTimeout(function(){
+        $(".element10").css("display", "inherit");
+    }, 2000);
+setTimeout(function(){
+        $(".element11").css("display", "inherit");
+    }, 2050);
+setTimeout(function(){
+        $(".element12").css("display", "inherit");
+    }, 2100);
+setTimeout(function(){
+        $(".element13").css("display", "inherit");
+    }, 2150);
+setTimeout(function(){
+        $(".element14").css("display", "inherit");
+    }, 2200);
+setTimeout(function(){
+        $(".element15").css("display", "inherit");
+    }, 2250);
+
 });
