@@ -9,3 +9,19 @@
   width: 100%;
   background: aqua;
 }
+
+#terminalBar {
+  width: 100%;
+}
+
+.terminalContainer {
+  height: 100%
+  width: 100%
+  background: black;
+}
+
+.terminalBlack {
+  height: 500px;
+  background: black;
+  margin-top: -3px;
+}
