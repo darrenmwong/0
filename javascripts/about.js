@@ -91,5 +91,18 @@ setTimeout(function(){
 setTimeout(function(){
         $(".element15").css("display", "inherit");
     }, 2250);
+setTimeout(function(){
+        $(".element16").css("display", "inherit");
+    }, 2300);
+/* BREAK POINT */
+setTimeout(function(){
+        $(".element17").css("display", "inherit");
+    }, 3000);
+setTimeout(function(){
+        $(".element18").css("display", "inherit");
+    }, 3020);
+setTimeout(function(){
+        $(".element19").css("display", "inherit");
+    }, 3050);
 
 });
