@@ -24,4 +24,11 @@
   height: 500px;
   background: black;
   margin-top: -3px;
+  z-index: -100;
 }
+
+.nodisplay {
+  display: none;
+  color: #1EFF00;
+  z-index: 100;
+  }
