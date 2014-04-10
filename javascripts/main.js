@@ -53,6 +53,14 @@ $('.navClose').hover(function() {
     $('.line, .box').slideUp('slow');
     });
 
+/* Image Clicks */
+
+$('#seatImage').click(function(e) {
+    e.preventDefault();
+    $('#seatImage').append('<div> WOAH </div>');
+
+
+});
 /* SCROLL FUNCTION */
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -62,7 +70,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 500);
+        }, 600);
         return false;
       }
     }

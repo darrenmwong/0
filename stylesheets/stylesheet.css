@@ -127,61 +127,6 @@ a:active {color: black;}
   margin-top: -8px;
 
 }
-.projectContainer {
-  width: 100%;
-  margin-top: 0%;
-  height:100%;
-  background:  #EEF1F3;
-  z-index: 100;
-  }
-
-.projectWrapper {
-  margin: auto;
-  width: 80%;
-  background:  #EEF1F3;
-  z-index: -2;
-  height:100%;
-  
-}
-.projectWrapper h3 {
-  text-align: center;
-}
-
-.projectImage {
-  max-width: 300px;
-  border: 2px solid black;
-  margin-left: 15px;
-  opacity: 1;  
-}
-.seatProject {
-  float: left;
-  padding: 30px; 
-  margin: auto;
-  background:  #EEF1F3;
-  z-index: 100;
-  margin-top: 0px;
-  display: none; 
-}
-
-.comparisonProject {
-  float: left;
-  padding: 30px;
-  margin: auto;
-  background:  #EEF1F3;
-  z-index: 100;
-  margin-top: 0px;
-  display: none; 
-}
-
-.pawProject  {
-  float: left;
-  padding: 30px;
-  margin: auto;
-  background:  #EEF1F3;
-  z-index: 100;
-  margin-top: 0px;
-  display: none; 
-}
 
 .summaryContainer {
   z-index: -1;
@@ -219,8 +164,6 @@ a:active {color: black;}
 
 
 }
-  
-
 
 .parImage2 h4{
   font-size: 45px;
@@ -232,7 +175,6 @@ a:active {color: black;}
   background-color:  #EEF1F3;
  } 
 
-#infoBreak {
-  height: 500px;
-  width: 500px;
-}
+
+
+
