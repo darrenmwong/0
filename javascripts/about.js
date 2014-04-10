@@ -1,3 +1,4 @@
+$('#aboutNav').click(function() {
 setTimeout(function(){
         $(".element0").typed({
             strings: ["apt-get install konquer"],
@@ -56,3 +57,4 @@ setTimeout(function(){
             callback: function(){ } // call function after typing is done
         });
     }, 400);
+});
