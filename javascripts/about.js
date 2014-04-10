@@ -20,7 +20,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 1000);
+    }, 1500);
 
 setTimeout(function(){
         $(".element2").css("display", "inherit");
@@ -32,7 +32,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 1100);
+    }, 1550);
 
 setTimeout(function(){
         $(".element3").css("display", "inherit");
@@ -44,7 +44,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 1200);
+    }, 1600);
 
 setTimeout(function(){
         $(".element4").css("display", "inherit");
@@ -56,12 +56,18 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 1300);
+    }, 1650);
 setTimeout(function(){
         $(".element5").css("display", "inherit");
-    }, 1400);
+    }, 1700);
 
 setTimeout(function(){
         $(".element6").css("display", "inherit");
-    }, 1500);
+    }, 1800);
+setTimeout(function(){
+        $(".element7").css("display", "inherit");
+    }, 1850);
+setTimeout(function(){
+        $(".element8").css("display", "inherit");
+    }, 1900);
 });
