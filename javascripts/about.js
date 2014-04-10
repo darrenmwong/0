@@ -70,4 +70,7 @@ setTimeout(function(){
 setTimeout(function(){
         $(".element8").css("display", "inherit");
     }, 1900);
+setTimeout(function(){
+        $(".element9").css("display", "inherit");
+    }, 1950);
 });
