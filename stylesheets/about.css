@@ -18,16 +18,19 @@
   height: 100%
   width: 100%
   background: black;
+  margin-top: 140px;
 }
 
 .terminalBlack {
-  height: 500px;
+  height: 700px;
   background: black;
   margin-top: -3px;
   z-index: -100;
 }
 
 .nodisplay {
+  font-family:COURIER;
+  font-size: 14px;
   display: none;
   color: white;
   z-index: 100;

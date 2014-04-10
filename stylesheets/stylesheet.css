@@ -76,9 +76,10 @@ h1 {
 }
 .navClose {
   position: fixed;
-  height:300px;
-  width: 600px;
+  height: 190px;
+  width: 550px;
   z-index: 999;
+ 
 }
 
 .line {

@@ -57,4 +57,11 @@ setTimeout(function(){
             callback: function(){ } // call function after typing is done
         });
     }, 1300);
+setTimeout(function(){
+        $(".element5").css("display", "inherit");
+    }, 1400);
+
+setTimeout(function(){
+        $(".element6").css("display", "inherit");
+    }, 1500);
 });
