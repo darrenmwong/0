@@ -20,7 +20,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 100);
+    }, 1000);
 
 setTimeout(function(){
         $(".element2").css("display", "inherit");
@@ -32,7 +32,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 200);
+    }, 1100);
 
 setTimeout(function(){
         $(".element3").css("display", "inherit");
@@ -44,7 +44,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 300);
+    }, 1200);
 
 setTimeout(function(){
         $(".element4").css("display", "inherit");
@@ -56,5 +56,5 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 400);
+    }, 1300);
 });
