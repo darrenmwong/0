@@ -160,11 +160,10 @@ a:active {color: black;}
 
 .parImage1 h4{
   font-size: 45px;
-  color: grey;
+  color: black;
   height: 195px;
   float: left;
   z-index: 100;
-  background-color: #EEF1F3;
   margin: 0px;
 
 
@@ -172,12 +171,11 @@ a:active {color: black;}
 
 .parImage2 h4{
   font-size: 45px;
-  color: grey;
+  color: black;
   height: 100px;
   float: right;
-  margin-top: -525px;
+  margin-top: -680px;
   z-index: 100;
-  background-color:  #EEF1F3;
  } 
 
 
