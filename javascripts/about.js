@@ -97,12 +97,12 @@ setTimeout(function(){
 /* BREAK POINT */
 setTimeout(function(){
         $(".element17").css("display", "inherit");
-    }, 3000);
+    }, 3200);
 setTimeout(function(){
         $(".element18").css("display", "inherit");
-    }, 3020);
+    }, 3300);
 setTimeout(function(){
         $(".element19").css("display", "inherit");
-    }, 3050);
+    }, 3320);
 
 });
