@@ -5,6 +5,9 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="0 : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/parallax.css">
+
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/projects.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/about.css">
@@ -14,29 +17,57 @@
 
 
 <body>
+
  <nav class=nav>
+
     <h1> .darren wong </h1>
    <div class=line></div>
    <div class=box>
      <div class=navLinks>
          <a href="#parallaxBreak" id="projectNav">Work /</a>
          <a href="#aboutInfo" id="aboutNav">Info /</a> 
-         <a href="#">Connect </a>
+         <a href="#contactContainer">Connect </a>
      </div>
    </div>
  </nav>
 
-<!-- Summary -->
+<!-- -->
 
+<div id="scroll-animate">
+  <div id="scroll-animate-main">
+    <div class="wrapper-parallax">
+      <header>
 <div class=navClose></div>
 <div class="summaryContainer">
   <canvas id='world'></canvas>
   <div class="summary">
-  
  </div>
-
 </div>
 
+      </header>
+
+      <section class="content">
+        <h1>Content</h1>
+      </section>
+
+      <footer>
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Summary -->
+<!--
+<div class=navClose></div>
+<div class="summaryContainer">
+  <canvas id='world'></canvas>
+  <div class="summary">
+ </div>
+</div>
+-->
 <!--Parallax -->
 <div id="parallaxBreak">
 </div>
@@ -86,10 +117,7 @@
 
 <div class="seatContainer">
   <div id="seatInfo">
-
-<h3> THIS IS WHERE INFO GOES </h3>
-
-  </div>
+     </div>
 </div>
 
 
@@ -113,21 +141,11 @@
 <!-- PAW PRINT INFO -->
 
 <div id="pawBreak">
+  <div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-1600x900.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg" data-width="1600" data-height="900"></div>
 </div>
 
 <div class="pawContainer">
   <div id="pawInfo">
-    <div class='images'>
-      <div class='arrows'>
-        <i class='prev icon-arrow-left4'></i>
-        <i class='next icon-arrow-right4'></i>
-      </div>
-        <div class='image-container'>
-           <img src='http://i.imgur.com/LY2nocB.png'>
-           <img src='http://i.imgur.com/IXhFWyM.png'>
-           <img src='http://i.imgur.com/a3QKO71.png'>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -249,9 +267,7 @@ SOMETHING SOMETHING GOES HERE DARK SIDE.
 
 </div>
 
-
-
-
+    <script type="text/javascript" src="javascripts/parallax.js"></script>
     <script type="text/javascript" src="javascripts/typed.js"></script>
     <script type="text/javascript" src="javascripts/about.js"></script>
     <script type="text/javascript" src="javascripts/canvas.js"></script>
