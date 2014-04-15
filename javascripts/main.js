@@ -40,7 +40,7 @@ var parCon = function() {
      $('.parallaxContainer').css('z-index', '-1000');
     },2500);
 };
-/* Navigation */    
+/* Navigation     
 $('.nav h1').hover(function () {
   "use strict";
   $('.line, .box').css('opacity', '1');
@@ -52,7 +52,7 @@ $('.navClose').hover(function() {
     "use strict";
     $('.line, .box').slideUp('slow');
     });
-
+*/
 /* Image Clicks */
 
 $('#seatImage').click(function(e) {

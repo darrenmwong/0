@@ -5,39 +5,57 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="0 : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/parallax.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/projects.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/about.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/slider.css">
+   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/icons.css">
  
+
   </head>
 
 
 <body>
+
  <nav class=nav>
-    <h1> .darren wong </h1>
+  <div class="icons">
+    <div id="tertiary" class="aside main-aside">
+      <ul class="xoxo social-icons">
+         <li><a class="entypo-mail" href="mailto:darrenwong06@gmail.com" title="Mail"><span>Mail</span></a></li>
+         <li><a class="entypo-linkedin" href="https://www.linkedin.com/in/darrenmwong" title="Linkedin"><span>Linkedin</span></a></li>
+         <li><a class="entypo-github" href="https://github.com/darrenmwong" title="Github"><span>Github</span></a></li>
+         <li><a class="entypo-rss" href="http://darrenwong06.wordpress.com/" title="RSS"><span>RSS</span></a></li>
+     </ul>
+   </div>
+ </div>
+    <a href="#"><h1> .darren wong </h1></a>
    <div class=line></div>
    <div class=box>
      <div class=navLinks>
          <a href="#parallaxBreak" id="projectNav">Work /</a>
          <a href="#aboutInfo" id="aboutNav">Info /</a> 
-         <a href="#">Connect </a>
+         <a href="#contactContainer">Connect </a>
      </div>
    </div>
  </nav>
 
-<!-- Summary -->
+<!-- -->
 
-<div class=navClose></div>
-<div class="summaryContainer">
-  <canvas id='world'></canvas>
-  <div class="summary">
-  
- </div>
+<div id="scroll-animate">
+  <div id="scroll-animate-main">
+    <div class="wrapper-parallax">
+      <header>
+       <div class=navClose></div>
+        <div class="summaryContainer">
+         <canvas id='world'></canvas>
+           <div class="summary">
+       </div>
+      </div>
+      </header>
 
-</div>
-
-<!--Parallax -->
+      <section class="content">
 <div id="parallaxBreak">
 </div>
 
@@ -75,6 +93,29 @@
   <h4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </h4>
 </div>
 
+      </section>
+
+      <footer>
+  all section is going to go here
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Summary -->
+<!--
+<div class=navClose></div>
+<div class="summaryContainer">
+  <canvas id='world'></canvas>
+  <div class="summary">
+ </div>
+</div>
+-->
+<!--Parallax -->
+
+
 
 
 
@@ -86,10 +127,7 @@
 
 <div class="seatContainer">
   <div id="seatInfo">
-
-<h3> THIS IS WHERE INFO GOES </h3>
-
-  </div>
+     </div>
 </div>
 
 
@@ -113,21 +151,11 @@
 <!-- PAW PRINT INFO -->
 
 <div id="pawBreak">
+  <div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-1600x900.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg" data-width="1600" data-height="900"></div>
 </div>
 
 <div class="pawContainer">
   <div id="pawInfo">
-    <div class='images'>
-      <div class='arrows'>
-        <i class='prev icon-arrow-left4'></i>
-        <i class='next icon-arrow-right4'></i>
-      </div>
-        <div class='image-container'>
-           <img src='http://i.imgur.com/LY2nocB.png'>
-           <img src='http://i.imgur.com/IXhFWyM.png'>
-           <img src='http://i.imgur.com/a3QKO71.png'>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -249,9 +277,7 @@ SOMETHING SOMETHING GOES HERE DARK SIDE.
 
 </div>
 
-
-
-
+    <script type="text/javascript" src="javascripts/parallax.js"></script>
     <script type="text/javascript" src="javascripts/typed.js"></script>
     <script type="text/javascript" src="javascripts/about.js"></script>
     <script type="text/javascript" src="javascripts/canvas.js"></script>

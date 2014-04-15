@@ -30,7 +30,7 @@ h1 {
     padding-top: 10px;
     white-space:nowrap;
     overflow:hidden;
-    color: #1586d1;
+    color: black;
     -webkit-animation: typing 0.8s steps(30, end), /* # of steps = # of characters */
                         blink-caret 1s step-end infinite;
     -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
@@ -63,10 +63,11 @@ h1 {
   width: 500px; 
   margin-top: 0px;
   z-index: 1000;
+  color:black;
 }
 .nav h1:hover {
   top: 17px;
-  color: black;
+  color: grey;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -ms-transition: all 0.25s;
@@ -85,21 +86,22 @@ h1 {
 .line {
   margin: 0 auto;
   padding: 0;
-  display: none;
   position: relative;
   width: 1px;
-  height: 35px;
+  height: 10px;
   top: 22px;
-  opacity: 0.2;
   background: black;
   margin-left: 6%;
-  margin-top: -1.4%;
+  margin-top: -3.4%;
   z-index: 1000;
   
 }
 
 
-a:link {color: black;}      /* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+  }      /* unvisited link */
 a:visited {color:black;}  /* visited link */
 a:hover {color: grey;}  /* mouse over link */
 a:active {color: black;}
@@ -117,12 +119,10 @@ a:active {color: black;}
 .box {
   margin: 0 auto;
   padding: 0;
-  display: none;
   position: relative;
   width: 401px;
   height: 30px;
   top: 30px;
-  opacity: 0.2;
   background: #EEF1F3;
   text-align: center;
   line-height: 30px;
