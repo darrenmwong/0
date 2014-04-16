@@ -28,7 +28,7 @@
   padding: 0 0.5em;
   font-size: 2em;
   text-decoration: none;
-  border: 1px solid;
+  border-bottom: 1px solid;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .social-icons li a:hover {
