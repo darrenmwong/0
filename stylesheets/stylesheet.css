@@ -178,6 +178,8 @@ a:active {color: black;}
   z-index: 100;
  } 
 
-
-
+#under {
+text-align: center;
+font-size: 50px;
+}
 
