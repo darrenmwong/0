@@ -1,269 +1,472 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="0 : " />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/parallax.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/projects.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/about.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/slider.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/icons.css">
-  </head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+<!-- Meta Tag for responsive -->
+<meta name=”viewport” content=”width=1024, minimal-ui”>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
+<title>UNO - A Powerful Personal Portfolio and Resume Page</title>
+    
+<!-- Loading of stylesheet for the design -->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+    
+<!-- This tells the page to watch for special styling for IE9 -->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
 
-<body>
- <nav class=nav>
-  <div class="icons">
-    <div id="tertiary" class="aside main-aside">
-      <ul class="xoxo social-icons">
-         <li><a class="entypo-newspaper" href="DarrenWong.pdf" title="Resume"><span>Resume</span></a></li>
-         <li><a class="entypo-mail" href="mailto:darrenwong06@gmail.com" title="Mail"><span>Mail</span></a></li>
-         <li><a class="entypo-linkedin" href="https://www.linkedin.com/in/darrenmwong" title="Linkedin"><span>Linkedin</span></a></li>
-         <li><a class="entypo-github" href="https://github.com/darrenmwong" title="Github"><span>Github</span></a></li>
-         <li><a class="entypo-rss" href="http://darrenwong06.wordpress.com/" title="RSS"><span>RSS</span></a></li>
-     </ul>
-   </div>
- </div>
-    <a href="#"><h1> .darren wong </h1></a>
-   <div class=line></div>
-   <div class=box>
-     <div class=navLinks>
-         <a href="#parallaxBreak" id="projectNav">Work /</a>
-         <a href="#aboutInfo" id="aboutNav">Info /</a> 
-     </div>
-   </div>
- </nav>
+<!-- Important external stylesheets -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/jquery.fancybox8cbb.css?v=2.1.5" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="css/jquery.fs.wallpaper.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/animate.css">
 
-<!-- -->
+<!-- Finally we will load the font from Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+</head>
 
-       <div class=navClose></div>
-        <div class="summaryContainer">
-        <!-- <canvas id='world'></canvas> -->
-            <h3 id="under"> Under Construction </h3>
-           <div class="summary">
-       </div>
-      </div>
+<body id="top">
 
-<div id="parallaxBreak">
-</div>
+<!-- Start of Social Section at bottom of page --> 
+<div id="socialsection">
 
-<div class="parallaxContainer">
-  <div class="parImage1">
-    <h4><span style="color: #1586d1;">PROJECTS</span> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< </h4>
-  </div>
-</div>
-
-
-<!-- Project Content -->
-<div class="projectContainer">
-  <div class="projectWrapper"> 
-    <div class="seatProject">
-      <h3> Seat </h3>
-      <a href="#seatInfo">     
-      <img src="http://i.imgur.com/0CDW7ef.png" alt=" " class="projectImage" id="seatImage" /></a>
+    <!-- You MUST add the URL's for your account at each social network in the code below to swap out the hash # tag -->
+    <div id="social-left">
+        <a href="#"><i class="icon-gplus"></i></a>
+        <a href="#"><i class="icon-pinterest"></i></a>
+        <a href="#"><i class="icon-facebook"></i></a>
+        <a href="#"><i class="icon-twitter"></i></a>
     </div>
-
-    <div class="comparisonProject">
-      <h3>Comparison </h3>
-      <a href="#comparisonInfo">
-      <img src="http://i.imgur.com/yjtNdaO.png" alt=" " class="projectImage" id="comparisonImage" /></a>
+    
+    <div id="social-button"></div>
+    
+    <!-- You MUST change the URL definition in these links to share YOUR page - simply change the URL -->
+    <div id="social-right">
+        <a href="https://plus.google.com/share?url=http://mythemepreviews.com/uno_personal/image/" target="_blank"><i class="icon-gplus"></i></a>
+        <a href="http://pinterest.com/pin/create/button/?url=http://mythemepreviews.com/uno_personal/image/" target="_blank"><i class="icon-pinterest"></i></a>
+        <a href="http://www.facebook.com/share.php?u=http://mythemepreviews.com/uno_personal/image/"  target="_blank"><i class="icon-facebook"></i></a>
+        <a href="http://twitter.com/home?status=http://mythemepreviews.com/uno_personal/image/"  target="_blank"><i class="icon-twitter"></i></a>
     </div>
+    
+</div><!-- End of Social Section at bottom of page -->     
+    
+        
 
-    <div class="pawProject">
-      <h3>Paw Prints </h3>
-      <a href="#pawInfo">
-      <img src="http://i.imgur.com/x7T3kpw.png" alt=" " class="projectImage" id="pawImage" /></a>
-    </div>
-  </div>
-</div>
+<!-- HEADER SECTION -->
+<header>
 
-<div class="parImage2">
-  <h4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </h4>
-</div>
+    <!-- Start of Header Container - the content div that is a set width and centralized -->
+    <div class="header-container">
+        
+        <div id="menu" class="menu">
+            <div id="nav" class="nav">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#CV">Resume</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div id="menu-button"></div> 
+        </div>        
+
+    </div><!-- End of Header Container -->
+    
+</div><!-- End of Header -->
+
+</header>
+    
+    
+<!-- TOP SECTION -->
+
+<!-- Start of Video Element -->
+<div id="video_element">
+
+    <!-- Start of Main Title + Intro -->
+    <div class="huge-title">
+
+        <img src="http://i.imgur.com/da7aMdC.jpg" alt="Jonathan Atkinson" class="headshot wow " data-wow-delay="3s" data-wow-offset="80" data-wow-duration="1s">
+        <h1 class="wow bounceInDown" data-wow-offset="80" data-wow-duration="3s">Darren Wong</h1>
+
+        <!-- Start of Owl Testimonial Carousel -->
+        <div class="testimonials owl-carousel">
+
+            <div><!-- Start of Slide 1 -->
+                <div class="button-box"><h4>Web Developer</h4></div>
+            </div>
+
+            <div><!-- Start of Slide 2 -->
+                <div class="button-box"><h4>Tinker</h4></div>
+            </div>
+
+            <div><!-- Start of Slide 3 -->
+                <div class="button-box"><h4>Hard Worker</h4></div>
+            </div>
+
+        </div><!-- End of Owl Testimonial Carousel -->
+
+    </div><!-- End of Main Title + Intro -->
+
+    <!-- Start of Scroll Down Message and animation -->
+    <div id="godown" class="floating">
+
+        <p><a href="#About">Learn more about Darren Wong</a></p>
+        <img src="img/godown.png" alt="down"/>
+
+    </div><!-- End of Scroll Down Message and animation -->
+
+    <!-- Start of Shade - this is the css based gradient over the image for that cool effect -->
+    <div class="shade"></div><!-- End of Shade -->
+
+</div><!-- End of Video Element -->
 
 
 
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+
+    <!-- Start of Container -->
+    <div class="container">
+        
+        
+        
+        <!-- AT A GLANCE SECTION -->
+            
+        <!-- Start of Content - where the content be -->
+        <div class="content2">
+        
+            <!-- Start of Hero - The main top image like a phone etc -->
+            <div class="hero">
+                
+                <h3>At a glance</h3>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
+                        <h4>FULL NAME</h4>
+                            <h5>Darren Michael Wong</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4>BIRTHPLACE</h4>
+                            <h5>Sacramento, California</h5>
+                </div>
+                
+                <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h4>BORN</h4>
+                            <h5>1988</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
+                        <h4>RESIDENCE</h4>
+                            <h5>Emeryville, CA</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4>EDUCATION</h4>
+                            <h5>General Assembly WDI</h5>
+                </div>
+                
+                <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h4>HOBBIES</h4>
+                            <h5>Games, Technology, Fitness</h5>
+                </div>
+                
+            </div><!-- End of Hero -->
+            
+        </div><!-- End of Content -->
+        
+        
+        
+        <!-- ABOUT SECTION -->    
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+            
+            <!-- Start of Content -->
+            <div class="content" id="About">
+                    
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">About me</h2>
+                  <p>I am a tinker that loves to learn new technologies while trying to master useful ones. I love the technology field and would love to learn as much as i can about any given subject. I'm very interested in heavy javascript frameworks with a rich client side and would love to make a career in that kind of stack.</p>
+                <blockquote class="wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="3s"><p>Problem solving is only difficult if you give up easy.</p></blockquote>
+
+            
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
+        
+        
+        
+        <!-- SKILLS SECTION -->
+        
+        <!-- Start of Parallax 1 Container -->
+        <div class="parallax1">
+
+            <!-- Start of Content -->
+            <div class="content" id="Skills">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">My Skills</h2>
+
+                <!-- Start of One Half Column Container -->
+                <div class="half_column1 wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+
+                  <p> I'm always learning and adapting to new languages/skills that i come across. These skills are a representation of how comfortable i am as a whole including adapting to learn.
+
+                </div><!-- End of One Half Column Container -->
+
+                <!-- Start of One Half Column Last Container -->
+                <div class="half_column2 wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <!-- Start of 3 rows -->
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="90" data-readOnly="true" >
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true">
+                        <h3>RUBY ON RAILS</h3>
+                    </div>
+
+                    <div class="one_third_last centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="85" data-readOnly="true">
+                        <h3>JQuery</h3>
+                    </div>
+                    <!-- End of 3 rows -->
 
 
-<!-- Summary -->
-<!--
-<div class=navClose></div>
-<div class="summaryContainer">
-  <canvas id='world'></canvas>
-  <div class="summary">
- </div>
-</div>
+                    <!-- Start of 2nd 3 rows -->
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="70" data-readOnly="true">
+                        <h3>HTML/CSS</h3>
+                    </div>
+
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="60" data-readOnly="true">
+                        <h3>MYSQL</h3>
+                    </div>
+
+                    <div class="one_third_last centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="75" data-readOnly="true">
+                        <h3>METEOR</h3>
+                    </div>
+                    <!-- End of 2nd 3 rows -->
+
+                </div><!-- End of One Half Column Last Container -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Parallax 1 Container -->
+        
+
+        
+        <!-- CV / RESUME SECTION -->
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+        
+            <!-- Start of Content -->
+            <div class="content" id="CV">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">curriculum</h2>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third clearfix wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Education</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Master Of The Universe</h3>
+                    <h5>University Of Life</h5>
+                    <p class="small">3 Years</p>
+                    <div class="date">June 2010 - May 2013</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Understudy Of The Universe</h3>
+                    <h5>University Of Earlier Life</h5>
+                    <p class="small">2 Years</p>
+                    <div class="date">June 2008 - May 2010</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="bigspace"></div>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Work Experience</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Front End Developer</h3>
+                    <h5>XYZ Company, Utah</h5>
+                    <p class="small">6 Months</p>
+                    <div class="date">June 2013 - Present</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Internship</h3>
+                    <h5>Company ABC</h5>
+                    <p class="small">1 Year</p>
+                    <div class="date">May 2012 - May 2013</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                    <a href="#" class="button-reverse">Download My CV</a><a href="#" class="button">LinkedIn Profile</a>
+                </div><!-- End of 2/3 Column Last -->
+
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
+        
+
+        
+       
+        
+        
+       
+        
+        
+        <!-- PORTFOLIO SECTION -->
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+        
+            <!-- Start of Content - where the content be -->
+            <div class="content" id="Portfolio">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Portfolio</h2>
+               <!-- <p>Display as many or as little images as you wish using the gallery module. This 3 column section can be stacked multiple times to provide a huge amount of images if required.</p>
+                <p>Lightbox powered means larger images are just a click away.</p>
+                <p>These images are contained in a group meaning that your user can click any image and then go back and forwards through each one in the lightbox.</p>
 -->
-<!--Parallax -->
+                <div class="center-align">
 
+                    <!-- Start of 3 rows -->
+                    <div class="one_third wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port1.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port1.jpg" alt="Portfolio 1" /></div></a>
+                            <h5>Fashion Watch</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
 
+                    <div class="one_third wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port2.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port2.jpg" alt="Portfolio 2" /></div></a>
+                            <h5>TV Chair</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
 
+                    <div class="one_third_last wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port3.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port3.jpg" alt="Portfolio 3" /></div></a>
+                            <h5>Sun Leak</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div><!-- End of 3 rows -->
 
+                    <!-- Start of 3 rows -->
+                    <div class="one_third wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port4.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port4.jpg" alt="Portfolio 4" /></div></a>
+                            <h5>Water Balls</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
 
-<!-- SEAT INFO -->
+                    <div class="one_third wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port5.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port5.jpg" alt="Portfolio 5" /></div></a>
+                            <h5>Wedding Rings</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
 
-<div id="seatBreak">
-</div>
+                    <div class="one_third_last wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port6.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port6.jpg" alt="Portfolio 6" /></div></a>
+                            <h5>Time to Drive</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div><!-- End of 3 rows -->
 
+                </div>
 
-<div class="seatContainer">
-  <div id="seatInfo">
-     </div>
-</div>
-
-
-<!-- COMPARISON INFO -->
-
-
-<div id="comparisonBreak">
-</div>
-
-
-<div class="comparisonContainer">
-  <div id="comparisonInfo">
-
-<h3> THIS IS WHERE COMPARISON INFO GOES </h3>
-
-  </div>
-</div>
-
-
-
-<!-- PAW PRINT INFO -->
-
-<div id="pawBreak">
-  <div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-1600x900.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg" data-width="1600" data-height="900"></div>
-</div>
-
-<div class="pawContainer">
-  <div id="pawInfo">
-  </div>
-</div>
-
-<!-- ABOUT ME -->
-
-<div id="aboutBreak">
-  
-</div>
-
-
-<div class="aboutContainer">
-  <div id="aboutInfo">
-    <h3> ABOUT SHIT GOES HERE </h3>
-    <div class="terminalContainer">
-     <img src=http://i.imgur.com/NgtJvrE.png id="terminalBar" />
-      <div class="terminalBlack">
-         <div class='element0 nodisplay'>
-          darren@wong ~$ 
-         </div>
-
-         <div class='element1 nodisplay'>
-          darren@wong ~$ cd ab/p/info 
-         </div>
-
-         <div class='element2 nodisplay'>
-          darren@wong ~$ apt-get install skills 
-         </div>
- 
-         <div class='element3 nodisplay'>
-           <span style="color: #00FF00;">rvm</span> use <span style="color: #FF4D4D;">ruby 2.1.0dev</span>
-        </div>
-
-         <div class='element4 nodisplay'>
-              <span style="color: #00FF00;">create</span>          app/assets/javascript/<span style="color: #FF4D4D;">javascript.js</span>
-         </div>
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
         
-         <div class='element5 nodisplay'>
-           <span style="color: #00FF00;">create</span> app/assets/javascript/<span style="color: #FF4D4D;">meteor.js</span>
-        </div>
- 
-         <div class='element6 nodisplay'>
-           <span style="color: #00FF00;">create</span> app/assets/javascript/<span style="color: #FF4D4D;">backbone.js</span>
-        </div>
-           
-         <div class='element6 nodisplay'>
-           <span style="color: #00FF00;">create</span> app/assets/javascript/<span style="color: #FF4D4D;">angular.js</span>
-        </div>
-
-         <div class='element7 nodisplay'>
-          <span style="color: #00FF00;">create</span> app/assets/javascript/<span style="color: #FF4D4D;">jquery.js</span>
-        </div>
-         
-         <div class='element8 nodisplay'>
-          <span style="color: #00FF00;">create</span> app/assets/javascript/<span style="color: #FF4D4D;">coffeescript.js.coffee</span>
-         </div>
-
-         <div class='element9 nodisplay'>
-          <span style="color: #00FF00;">create </span>app/assets/stylesheets/<span style="color: #FF4D4D;">CSS3.css</span>
-        </div>
-
-         <div class='element10 nodisplay'>
-          <span style="color: #00FF00;">create </span>app/assets/stylesheets/<span style="color: #FF4D4D;">HTML5</span>
-        </div>
-
-         <div class='element11 nodisplay'>
-          <span style="color: #00FF00;">create</span> 
-            bin/<span style="color: #FF4D4D;">rails</span>
-        </div>
-
-         <div class='element12 nodisplay'>
-          <span style="color: #00FF00;">create</span>
-           db/<span style="color: #FF4D4D;">postSql</span>
-        </div>
-
-         <div class='element13 nodisplay'>
-          <span style="color: #00FF00;">create</span>
-           db/<span style="color: #FF4D4D;">sqlite</span>
-        </div>
-
-         <div class='element14 nodisplay'>
-          <span style="color: #00FF00;">create </span>test/<span style="color: #FF4D4D;">rspec.rb</span>
-         </div> 
-
-         <div class='element15 nodisplay'>
-          <span style="color: #00FF00;">create </span>test/<span style="color: #FF4D4D;">jasmine.js</span>
-         </div> 
-
-
-         <div class='element16 nodisplay'>
-          <span style="color: #00FF00;">run </span>bundle install
-         </div> 
-
-         <div class='element17 nodisplay'>
-            Fetching additional metadata from https://darrenwong.io/..
-         </div>
-
-         <div class='element18 nodisplay'>
-            Resolving dependencies...
-         </div>
         
-        <div class='element19 nodisplay'>
-SOMETHING SOMETHING GOES HERE DARK SIDE.            
-        </div>
+        
+        <!-- CONTACT FORM SECTION -->
+
+        <!-- Start of Grey Container -->
+        <div class="greycontainer" id="Contact">
+
+            <!-- Start of Content -->
+            <div class="content centered" id="Contact">
+
+                <h2>Contact</h2>
+                <p>Provided with the product is this fully functional contact PHP based form with inline validation and success message. Invalid entries / missing fields will display a notice next to the incomplete field. On success a user defined message is neatly displayed as the form 'rolls-up'. Completed entries are emailed directly to your desired email account. PHP Mail() Function must be active on your hosting server, but that's pretty standard!</p>
 
 
+            </div><!-- End of Content -->
 
-      </div>
-    </div>
-  </div>
-</div>
+        </div><!-- End of Grey Container -->
+        
 
-<!-- CONTACT INFO -->
-<div id="contactBreak">
-</div>
+      
+        <!-- FOOTER SECTION -->
 
-<div id="contactContainer">
+        <!-- Start Of Footer -->    
+         <footer>
 
-</div>
+            <!-- Start of Content -->
+            <div class="content">
 
-    <script type="text/javascript" src="javascripts/typed.js"></script>
-    <script type="text/javascript" src="javascripts/about.js"></script>
-    <script type="text/javascript" src="javascripts/canvas.js"></script>
-    <script type="text/javascript" src="javascripts/main.js"></script>
-    <script type="text/javascript" src="javascripts/slider.js"></script>
+                <p>Contact Me<br>
+                <br>
+                Phone: 916.397.6614<br>
+                <a href="mailto: darrenwong06@gmail.com">darrenwong06@gmail.com</a></p>
 
-  </body>
+
+            </div><!-- End of Content -->
+
+        </footer><!-- End Of Footer -->
+        
+	</div><!-- End of Container -->
+    
+</div><!-- End of Wrapper -->
+
+<!--Loading Scripts -->
+<!-- First we will load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<!--Load Fallback if google not avalible-->
+<script>
+if (!window.jQuery) {
+    document.write('<script src="js/jquery-1.11.0.min.js"><\/script>');
+}
+</script>    
+<!-- Now we load the JS files for the fancy things on the page -->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack8cbb.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/retina.js"></script>
+<script type="text/javascript" src="js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="js/jquery.fs.wallpaper.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.plusanchor.js"></script>
+<script type="text/javascript" src="js/jquery.knob.js"></script>
+<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+</body>
 </html>
