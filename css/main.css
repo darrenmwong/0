@@ -352,7 +352,7 @@ h5 {
 	width: 100%;
 }
 .whitecontainer {
-    background: none repeat scroll 0 0 #097ecb;
+    background: none repeat scroll 0 0 #30ad9e;
 	width: 100%;
 	padding: 80px 0;
 	overflow: auto;
@@ -459,7 +459,7 @@ h5 {
 	z-index: 110;
 	width: 100%;
 	text-align:center;
-    background-color: #0875bd ;
+    background-color:#30ad9e ;
 }
 .centered { text-align: center !important; }
 .knob { color: rgba(255,255,255,0.4) !important; }
