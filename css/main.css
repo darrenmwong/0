@@ -664,9 +664,8 @@ h5 {
     text-align: left;
 }
 .infopanel {
-    background: none repeat scroll 0 0 grey;
+    background: none repeat scroll 0 0 rgba(255,255,255,.3);
     border-radius: 3px;
-    opacity: 0.9;
     box-shadow: none;
     margin-bottom: 1.25em;
     padding: 23px;
