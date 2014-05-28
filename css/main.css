@@ -593,7 +593,7 @@ h5 {
     z-index: 120;
     transition: all 0.3s ease-in-out;
 }
-#menu-button:hover { background-color: #0B86C8; }
+#menu-button:hover { background-color: grey; }
 #menu-button:hover:before { 
     border-top: 7px double #ffffff;
     border-bottom: 2px solid #ffffff;
@@ -664,8 +664,9 @@ h5 {
     text-align: left;
 }
 .infopanel {
-    background: none repeat scroll 0 0 #0875BD;
+    background: none repeat scroll 0 0 grey;
     border-radius: 3px;
+    opacity: 0.9;
     box-shadow: none;
     margin-bottom: 1.25em;
     padding: 23px;
@@ -935,7 +936,7 @@ Menu Styling
 }
 .nav ul li a, .nav ul li a:hover { font-size: 14px; border-bottom: 0px solid transparent; }
 .nav ul li a:hover { color: #ffffff; border-top: 0px solid transparent; }
-.nav ul li:hover { background-color: #097ECB; }
+.nav ul li:hover { background-color: grey; }
 /*
 ==============================================
 Responsive Syling
