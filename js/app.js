@@ -151,7 +151,7 @@
 
         //Video Wallpaper Settings - alter the URL's to your converted videos		
         $("#video_element").wallpaper({
-                source: "img/background.jpg"
+                source: "https://s3.amazonaws.com/ooomf-com-files/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg"
         });
 
         //fitVids
