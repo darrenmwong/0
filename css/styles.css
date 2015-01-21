@@ -9,7 +9,7 @@ HTML5 display definitions
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
 
   display: block;
-  
+
 
 }
 /* * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
@@ -17,20 +17,20 @@ audio, canvas, video {
  display: inline-block;
  *display: inline;
  *zoom: 1;
- 
+
 }
 /* * Prevents modern browsers from displaying `audio` without controls.
 * Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
  display: none;
  height: 0;
- 
+
 }
 /* * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
 * Known issue:no IE 6 support. */
 [hidden] {
  display: none;
- 
+
 }
 /* ==========================================================================
 Base
@@ -52,19 +52,19 @@ html {
 * elements. */
 html, button, input, select, textarea {
  font-family: sans-serif;
- 
+
 }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 body {
  margin: 0;
  font-family: 'Lato', sans-serif;
  overflow-x: hidden;
- 
+
 }
 html, body {
  width: auto !important;
  overflow-x: hidden !important;
- 
+
 }
 /* ==========================================================================
 Links
@@ -73,12 +73,12 @@ Links
 
 a:focus {
  outline: thin dotted;
- 
+
 }
 /* * Improves readability when focused and also mouse hovered in all browsers. */
 a:active, a:hover {
  outline: 0;
- 
+
 }
 /* ==========================================================================
 Typography
@@ -89,91 +89,91 @@ Typography
 h1 {
  font-size: 2em;
  margin: 0.67em 0;
- 
+
 }
 h2 {
  font-size: 1.5em;
  margin: 0.83em 0;
- 
+
 }
 h3 {
  font-size: 1.17em;
  margin: 1em 0;
- 
+
 }
 h4 {
  font-size: 1em;
  margin: 1.33em 0;
- 
+
 }
 h5 {
  font-size: 0.83em;
  margin: 1.67em 0;
- 
+
 }
 h6 {
  font-size: 0.75em;
  margin: 2.33em 0;
- 
+
 }
 /* * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome. */
 abbr[title] {
  border-bottom: 1px dotted;
- 
+
 }
 /* * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
 b, strong {
  font-weight: bold;
- 
+
 }
 blockquote {
  margin: 1em 40px;
- 
+
 }
 /* * Addresses styling not present in Safari 5 and Chrome. */
 dfn {
  font-style: italic;
- 
+
 }
 /* * Addresses styling not present in IE 6/7/8/9. */
 mark {
  background: #ff0;
  color: #000;
- 
+
 }
 /* * Addresses margins set differently in IE 6/7. */
 p, pre {
  margin: 1em 0;
- 
+
 }
 /* * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome. */
 code, kbd, pre, samp {
  font-family: monospace, serif;
  _font-family: 'courier new', monospace;
  font-size: 1em;
- 
+
 }
 /* * Improves readability of pre-formatted text in all browsers. */
 pre {
  white-space: pre;
  white-space: pre-wrap;
  word-wrap: break-word;
- 
+
 }
 /* * Addresses CSS quotes not supported in IE 6/7. */
 q {
  quotes: none;
- 
+
 }
 /* * Addresses `quotes` property not supported in Safari 4. */
 q:before, q:after {
  content: '';
  content: none;
- 
+
 }
 small {
  font-size: 75%;
- 
+
 }
 /* * Prevents `sub` and `sup` affecting `line-height` in all browsers. */
 sub, sup {
@@ -181,15 +181,15 @@ sub, sup {
  line-height: 0;
  position: relative;
  vertical-align: baseline;
- 
+
 }
 sup {
  top: -0.5em;
- 
+
 }
 sub {
  bottom: -0.25em;
- 
+
 }
 /* ==========================================================================
 Lists
@@ -198,22 +198,22 @@ Lists
 
 dl, menu, ol, ul {
  margin: 1em 0;
- 
+
 }
 dd {
  margin: 0 0 0 40px;
- 
+
 }
 /* * Addresses paddings set differently in IE 6/7. */
 menu, ol, ul {
  padding: 0 0 0 40px;
- 
+
 }
 /* * Corrects list images handled incorrectly in IE 7. */
 nav ul, nav ol {
  list-style: none;
  list-style-image: none;
- 
+
 }
 /* ==========================================================================
 Embedded content
@@ -230,7 +230,7 @@ img {
 /* * Corrects overflow displayed oddly in IE 9. */
 svg:not(:root) {
  overflow: hidden;
- 
+
 }
 /* ==========================================================================
 Figures
@@ -239,7 +239,7 @@ Figures
 
 figure {
  margin: 0;
- 
+
 }
 /* ==========================================================================
 Forms
@@ -248,14 +248,14 @@ Forms
 
 form {
  margin: 0;
- 
+
 }
 /* * Define consistent border, margin, and padding. */
 fieldset {
  border: 1px solid #c0c0c0;
  margin: 0 2px;
  padding: 0.35em 0.625em 0.75em;
- 
+
 }
 /* * 1. Corrects color not being inherited in IE 6/7/8/9.
 * 2. Corrects text not wrapping in Firefox 3.
@@ -286,7 +286,7 @@ button, input, select, textarea {
 * the UA stylesheet. */
 button, input {
  line-height: normal;
- 
+
 }
 /* * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
 *    and `video` controls.
@@ -307,7 +307,7 @@ input[type="reset"], input[type="submit"] {
 /* * Re-set default cursor for disabled elements. */
 button[disabled], input[disabled] {
  cursor: default;
- 
+
 }
 /* * 1. Addresses box sizing set to content-box in IE 8/9.
 * 2. Removes excess padding in IE 8/9.
@@ -333,19 +333,19 @@ input[type="search"] {
  -webkit-box-sizing: content-box;
  /* 2 */
   box-sizing: content-box;
-  
+
 }
 /* * Removes inner padding and search cancel button in Safari 5 and Chrome
 * on OS X. */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
  -webkit-appearance: none;
- 
+
 }
 /* * Removes inner padding and border in Firefox 3+. */
 button::-moz-focus-inner, input::-moz-focus-inner {
  border: 0;
  padding: 0;
- 
+
 }
 /* * 1. Removes default vertical scrollbar in IE 6/7/8/9.
 * 2. Improves readability and alignment in all browsers. */
@@ -363,7 +363,7 @@ Tables
 table {
  border-collapse: collapse;
  border-spacing: 0;
- 
+
 }
 /* * Remove most spacing between table cells. */
 /* ==========================================================================
@@ -378,7 +378,7 @@ h1.chain {
  font-weight: 600;
  background: url(../img/cog-icon.png) no-repeat top center;
  padding-top: 75px;
- 
+
 }
 h2.frame {
  text-align: center;
@@ -390,7 +390,7 @@ h2.frame {
  background: url(../img/frame-icon.png) no-repeat top center;
  padding-top: 65px;
  margin-top: 70px;
- 
+
 }
 h2.mech {
  text-align: center;
@@ -402,7 +402,7 @@ h2.mech {
  background: url(../img/mech-icon.png) no-repeat top center;
  padding-top: 65px;
  margin-top: 70px;
- 
+
 }
 h2.front-frame {
  text-align: center;
@@ -414,7 +414,7 @@ h2.front-frame {
  background: url(../img/front-icon.png) no-repeat top center;
  padding-top: 65px;
  margin-top: 70px;
- 
+
 }
 h2.twitter-post-username {
  color: #353738;
@@ -422,12 +422,12 @@ h2.twitter-post-username {
  font-size: 18px;
  font-weight: 600;
  margin-top: 30px;
- 
+
 }
 h2.twitter-post-username span {
  color: #848789;
  font-weight: 300;
- 
+
 }
 h2.logo-header {
  text-align: center;
@@ -439,7 +439,7 @@ h2.logo-header {
  padding-top: 120px;
  margin: 70px 0 40px 0;
  font-style: italic;
- 
+
 }
 /* ==========================================================================
 User Styles
@@ -452,19 +452,19 @@ User Styles
 .clearfix:before, .clearfix:after {
  content: " ";
  display: table;
- 
+
 }
 .clearfix:after {
  clear: both;
- 
+
 }
 .clearfix {
  *zoom: 1;
- 
+
 }
 .pullcontainer a#pull {
  display: none;
- 
+
 }
 a {
  color: #282f35;
@@ -473,12 +473,12 @@ a {
  -ms-transition: all .25s ease;
  -o-transition: all .25s ease;
  transition: all .25s ease;
- 
+
 }
 a:hover {
  color: #64c29e;
  text-decoration: none;
- 
+
 }
 p {
  text-align: center;
@@ -488,11 +488,11 @@ p {
  word-spacing: 2px;
  line-height: 1.8em;
  margin-top: 25px;
- 
+
 }
 p.text-intro {
  font-size: 18px;
- 
+
 }
 .hero {
  background: url(../img/hero.jpg) no-repeat top center #f4f5fc;
@@ -501,22 +501,22 @@ p.text-intro {
  -o-background-size: cover;
  background-size: cover;
  height: 685px;
- 
+
    opacity: 1;
-   
+
    transition: opacity .25s ease-in-out;
-   
+
    -moz-transition: opacity .25s ease-in-out;
-   
+
    -webkit-transition: opacity .25s ease-in-out;
-   
+
 
  }
 nav {
  height: 85px;
  margin-top: 30px;
  position: relative;
- 
+
 }
 .logo-holder {
  background: url(../img/main-logo.png) no-repeat center center;
@@ -525,112 +525,112 @@ nav {
  position: absolute;
  top: 0;
  left: 327px;
- 
+
 }
 .responsive-logo {
  display: hidden;
- 
+
 }
 header {
  background-color: #f4f5fc;
- 
+
 }
 header ul {
  padding-top: 35px;
- 
+
 }
 header ul li {
  list-style: none;
  float: left;
  text-transform: uppercase;
  letter-spacing: 2px;
- 
+
 }
 header ul li a {
  display: block;
  margin: 0 30px;
  color: #4d4959;
- 
+
 }
 .r_spacer {
  margin-right: 180px;
- 
+
 }
 .intro {
  padding: 115px 0;
  background-color: #fbfbfb;
- 
+
 }
 .section-1 {
- background: url(../img/background2.jpg) no-repeat center center;
+ background: url(../img/Project1.jpg) no-repeat center center;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  height: 600px;
  position: relative;
- 
+
 }
 .section-2 {
- background: url(../img/left-box-2.jpg) no-repeat center center;
+ background: url(../img/Project2.jpg) no-repeat center center;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  height: 600px;
  position: relative;
- 
+
 }
 .section-3 {
- background: url(../img/red-frame.jpg) no-repeat center center;
+ background: url(../img/Project3.jpg) no-repeat center center;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  height: 600px;
  position: relative;
- 
+
 }
 .section-4 {
- background: url(../img/red-bike.jpg) no-repeat center center;
+ background: url(../img/SubProject.jpg) no-repeat center center;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  height: 600px;
- 
+
 }
 .section-text {
  position: relative;
  height: 600px;
- 
+
 }
 .nopadding {
  padding: 0 !important;
  margin: 0 !important;
- 
+
 }
 .thin-sep {
  height: 1px;
  background-color: #d7d7d7;
  width: 50px;
  margin: 8% auto 0 auto;
- 
+
 }
 .small-featured-img {
  height: 200px;
  width: 100%;
  position: absolute;
  bottom: 0;
- 
+
 }
 .seat-red {
- background: url(../img/seat-red.jpg) no-repeat center center;
+ background: url(../img/paw2.jpg) no-repeat center center;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- 
+
 }
 .seat-black {
  background: url(../img/seat-black.jpg) no-repeat center center;
@@ -638,7 +638,7 @@ header ul li a {
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- 
+
 }
 .frame-red {
  background: url(../img/chrome-wheels.jpg) no-repeat center center;
@@ -646,19 +646,19 @@ header ul li a {
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- 
+
 }
 .section-text p {
  padding: 0 60px;
  text-align: justify;
- 
+
 }
 .arrow {
  background: url(../img/arrow.png) no-repeat center center;
  width: 21px;
  height: 10px;
  margin: -1px auto 0 auto;
- 
+
 }
 .logo-1 {
  width: 113px;
@@ -669,7 +669,7 @@ header ul li a {
  top: 50%;
  margin-left: -56px;
  margin-top: -59px;
- 
+
 }
 .logo-2 {
  width: 177px;
@@ -680,7 +680,7 @@ header ul li a {
  top: 50%;
  margin-top: -70px;
  margin-left: -90px;
- 
+
 }
 .logo-3 {
  width: 208px;
@@ -691,20 +691,20 @@ header ul li a {
  top: 50%;
  margin-left: -110px;
  margin-top: -10px;
- 
+
 }
 .flex-container {
  background-color: #f7f7f7;
  padding: 125px 0 35px;
  text-align: center;
- 
+
 }
 .flex-twitter-icon {
  width: 32px;
  height: 27px;
  background: url(../img/twitter-bird.png) no-repeat center center;
  margin: 0 auto;
- 
+
 }
 p.twitter-post {
  color: #848789;
@@ -712,71 +712,71 @@ p.twitter-post {
  font-style: italic;
  font-weight: 300;
  margin-bottom: 100px;
- 
+
 }
 .left-box-1 {
  width: 50%;
  float: left;
- 
+
 }
 .left-box-2 {
  width: 50%;
  float: right;
- 
+
 }
 .left-box-btm {
  width: 100%;
- 
+
 }
 .left-box-1 img, .left-box-2 img, .left-box-btm img {
  width: 100%;
- 
+
 }
 .mid-box-1 {
  width: 50%;
  float: left;
- 
+
 }
 .mid-box-2 {
  width: 50%;
  float: right;
- 
+
 }
 .mid-box-1 img {
  width: 100%;
  height: 100%;
- 
+
 }
 .mid-box-2 img {
  width: 100%;
  height: 100%;
- 
+
 }
 .right-box-1 {
  width: 100%;
- 
+
 }
 .right-box-2 {
  width: 50%;
  float: left;
- 
+
 }
 .right-box-3 {
  width: 50%;
  float: right;
- 
+
 }
 .right-box-3 img, .right-box-2 img, .right-box-1 img {
  width: 100%;
- 
+
 }
 .effects {
  background-color: #282f35;
- 
+
 }
 .effects .img {
  position: relative;
- 
+
 }
 .effects .img img {
  display: block;
@@ -784,7 +784,7 @@ p.twitter-post {
  padding: 0;
  max-width: 100%;
  height: auto;
- 
+
 }
 .overlay {
  z-index: 10
@@ -804,7 +804,7 @@ a.close-overlay {
  text-align: center;
  background-color: #000;
  cursor: pointer;
- 
+
 }
 a.close-overlay.hidden {
  display: none
@@ -823,7 +823,7 @@ a.close-overlay.hidden {
  -ms-transition: all 0.5s;
  -o-transition: all 0.5s;
  transition: all 0.5s;
- 
+
 }
 #effect .overlay a.expand {
  position: absolute;
@@ -849,7 +849,7 @@ a.close-overlay.hidden {
  -o-transition: all 0.5s;
  transition: all 0.5s;
  display: block;
- 
+
 }
 #effect .img {
  overflow: hidden
@@ -861,13 +861,13 @@ a.close-overlay.hidden {
  top: 50%;
  margin-top: -30px;
  opacity: 1;
- 
+
 }
 .discover {
  background-color: #282f35;
  padding: 70px 0;
  text-align: center;
- 
+
 }
 .shop-btn {
  border: solid 1px #bbb;
@@ -876,15 +876,15 @@ a.close-overlay.hidden {
  text-transform: uppercase;
  letter-spacing: 3px;
  font-weight: 400;
- 
+
 }
 .shop-btn:hover, .shop-btn:focus {
  border: solid 1px #64c29e;
- 
+
 }
 .sign-up {
  text-align: center;
- 
+
 }
 .signup-input {
  border: solid 1px #d3d7d9;
@@ -893,7 +893,7 @@ a.close-overlay.hidden {
  color: #929292;
  font-style: italic;
  letter-spacing: 1px;
- 
+
 }
 .submit-btn {
  background-color: #64c29e;
@@ -901,60 +901,60 @@ a.close-overlay.hidden {
  border: solid 1px #64c29e;
  font-weight: 300;
  padding: 25px 50px;
- 
+
 }
 section.sign_up {
  padding: 40px 0 110px 0;
- 
+
 }
 footer {
  background-color: #f7f7f7;
  padding: 100px 0;
- 
+
 }
 footer p {
  font-size: 13px;
  margin: 0;
- 
+
 }
 .footer-leftcol p {
  text-align: left;
- 
+
 }
 .footer-rightcol p {
  text-align: right;
  font-style: italic;
  margin-top: 20px;
- 
+
 }
 .bold-16p {
  font-size: 15px;
  font-weight: 600;
- 
+
 }
 .footer-midcol {
  margin-left: auto;
  margin-right: auto;
- 
+
 }
 .footer-midcol ul {
  text-align: center;
  padding: 0;
- 
+
 }
 .footer-midcol li {
  list-style: none;
  display: inline-block;
  margin-right: 15px;
- 
+
 }
 .footer-midcol li a {
  opacity: 1;
- 
+
 }
 .footer-midcol li a:hover {
  opacity: 0.5;
- 
+
 }
 .twitter-icon {
  background: url(../img/twitter-icon.png);
@@ -962,7 +962,7 @@ footer p {
  width: 35px;
  display: block;
  text-indent: -9999px;
- 
+
 }
 .facebook-icon {
  background: url(../img/facebook-icon.png);
@@ -970,7 +970,7 @@ footer p {
  width: 35px;
  display: block;
  text-indent: -9999px;
- 
+
 }
 .pintrest-icon {
  background: url(../img/pintrest-icon.png);
@@ -978,15 +978,15 @@ footer p {
  width: 35px;
  display: block;
  text-indent: -9999px;
- 
+
 }
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
  visibility: hidden;
- 
+
 }
 .bounceInLeft, .bounceInRight, .fadeInUp {
  visibility: visible;
- 
+
 }
 
 /*---------------*/
@@ -996,25 +996,25 @@ footer p {
 figure.effect-bubba 
 {
   color: white;
-  
+
 
 }
 
 figure.effect-bubba img 
 {
   opacity: 0.7;
-  
+
   -webkit-transition: opacity 0.35s;
-  
+
   transition: opacity 0.35s;
-  
+
 
 }
 
 figure.effect-bubba:hover img 
 {
   opacity: 0.4;
-  
+
 
 }
 
@@ -1024,89 +1024,89 @@ figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after 
 {
   position: absolute;
-  
+
   top: 30px;
-  
+
   right: 30px;
-  
+
   bottom: 30px;
-  
+
   left: 30px;
-  
+
   content: '';
-  
+
   opacity: 0;
-  
+
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  
+
   transition: opacity 0.35s, transform 0.35s;
-  
+
 
 }
 
 figure.effect-bubba figcaption::before 
 {
   border-top: 1px solid #fff;
-  
+
   border-bottom: 1px solid #fff;
-  
+
   -webkit-transform: scale(0,1);
-  
+
   transform: scale(0,1);
-  
+
 
 }
 
 figure.effect-bubba figcaption::after 
 {
   border-right: 1px solid #fff;
-  
+
   border-left: 1px solid #fff;
-  
+
   -webkit-transform: scale(1,0);
-  
+
   transform: scale(1,0);
-  
+
 
 }
 
 figure.effect-bubba h2 
 {
   text-align: center;
-  
+
   padding-top: 30%;
-  
+
   -webkit-transition: -webkit-transform 0.35s;
-  
+
   transition: transform 0.35s;
-  
+
   -webkit-transform: translate3d(0,-20px,0);
-  
+
   transform: translate3d(0,-20px,0);
-  
+
 
 }
 
 figure.effect-bubba h2 a 
 {
   border: 1px solid black;
-  
+
 
 }
 figure.effect-bubba p 
 {
   padding: 20px 2.5em;
-  
+
   opacity: 0;
-  
+
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  
+
   transition: opacity 0.35s, transform 0.35s;
-  
+
   -webkit-transform: translate3d(0,20px,0);
-  
+
   transform: translate3d(0,20px,0);
-  
+
 
 }
 
@@ -1114,11 +1114,11 @@ figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after 
 {
   opacity: 1;
-  
+
   -webkit-transform: scale(1);
-  
+
   transform: scale(1);
-  
+
 
 }
 
@@ -1126,10 +1126,10 @@ figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p 
 {
   opacity: 1;
-  
+
   -webkit-transform: translate3d(0,0,0);
-  
+
   transform: translate3d(0,0,0);
-  
+
 
 }
