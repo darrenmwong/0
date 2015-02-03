@@ -519,8 +519,8 @@ nav {
 
 }
 .logo-holder {
- background: url(../img/main-logo.png) no-repeat center center;
- width: 94px;
+ font-family: 'Lato', sans-serif;
+ text-transform: uppercase;
  height: 85px;
  position: absolute;
  top: 0;
