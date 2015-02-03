@@ -713,6 +713,7 @@ h5 {
     border-radius: 2px;
     line-height: 0;
     padding: 0;
+    opacity: 0.8;
     margin: 0;
 }
 #Portfolio .one_third_last, #Portfolio .one_third {margin-bottom: 0; margin-top: 5%; }
@@ -1092,4 +1093,9 @@ Responsive Syling
     }
 }
 
+.border-skills {
+    border-left: 2px solid white;
+    padding: 0 0 0 20px;
+
+}
 
