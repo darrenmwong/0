@@ -13,11 +13,11 @@ body, html {
 	background-attachment:fixed;
     font-family: 'Raleway', sans-serif;
     height: 100%;
-	min-height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     position: relative;
-	text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
     background-position: center center;
 }
 footer { background-color: #262B30; padding: 20px 0 50px 0; }
@@ -31,10 +31,10 @@ footer p {
 }
 header {
     width: 100%;
-	position: fixed;
-	top:0;
-	z-index:9999;
-	font-family: 'Raleway', sans-serif;
+    position: fixed;
+    top:0;
+    z-index:9999;
+    font-family: 'Raleway', sans-serif;
 }
 .header-container {
 	padding: 0;
@@ -74,17 +74,17 @@ strong {font-weight: 600; }
 
 /* Easily swap out my gradient for your own by visiting http://www.colorzilla.com/gradient-editor/ and replace the code below! DO NOT REMOVE the width, height, z-index and position in the code below */
 .shade {
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjZTc5MjkiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(206,121,41,0.1)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* IE10+ */
-background: radial-gradient(ellipse at center,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ace7929', endColorstr='#b3000000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-	width: 100%;
-	height: 100%;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjZTc5MjkiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(206,121,41,0.1)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(206,121,41,0.1) 0%,rgba(0,0,0,0.7) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ace7929', endColorstr='#b3000000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+    width: 100%;
+    height: 100%;
     z-index: 89;
     position: absolute;
 }
@@ -107,10 +107,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ace7929', e
 	background-size: cover;
 }
 p {
-	color: rgba(255, 255, 255, 0.75);
+	color: black;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 21px;
+	font-weight: 100;
+	font-size: 18px;
 	line-height: 1.7em;
 }
 p.copyright { font-size: 11px; opacity: 0.7;}
@@ -123,7 +123,7 @@ p.caption {
 	line-height: 1.3em;
     opacity: 0.6;
 }
-p a, ul li a, ol li a {color: #ffffff ; text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s ease-in-out; font-weight: 600;}
+p a, ul li a, ol li a {color: white ; text-decoration: none; transition: all 0.2s ease-in-out; font-weight: 100; }
 p a:hover, ul li a:hover, ol li a:hover {color: #ffffff ; text-decoration: none; border-bottom: 1px solid #ffffff; padding-bottom: 3px;}
 ul, ol {
     margin: 20px 0;
@@ -135,7 +135,7 @@ ol li {
     line-height: 1.7em;
     list-style: decimal outside none;
     margin-left: 20px;
-	color: rgba(95,117,137,1);
+    color: rgba(95,117,137,1);
 }
 ul li {
     font-family: 'Raleway', sans-serif;
@@ -143,7 +143,7 @@ ul li {
     line-height: 1.7em;
     list-style: square outside none;
     margin-left: 20px;
-	color: rgba(95,117,137,1);
+    color: rgba(95,117,137,1);
 }
 ul li a, ol li a {
     cursor: pointer;
@@ -169,7 +169,7 @@ blockquote {
     display: block;
     margin: 3.5em 0 3.5em 0em;
     padding: 0;
-	text-align:left;
+    text-align:left;
 }
 blockquote p {
     display: inline-block;
@@ -193,8 +193,8 @@ blockquote p {
 }
 .testimonials blockquote p {
     width: 100%;
-	text-align:left;
-	padding-bottom: 30px;
+    text-align:left;
+    padding-bottom: 30px;
 }
 .testimonials blockquote cite {
 	color: #ffffff;
@@ -204,8 +204,8 @@ blockquote p {
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-	opacity:0.7;
-	-webkit-backface-visibility:hidden;
+    opacity:0.7;
+    -webkit-backface-visibility:hidden;
 }
 #godown {
 	bottom: 20px;
@@ -215,7 +215,7 @@ blockquote p {
     position: fixed;
     right: 0;
     width: 100%;
-	text-align:center;
+    text-align:center;
     z-index:99;
 }
 #godown p {
@@ -228,7 +228,7 @@ blockquote p {
 	margin: 0px;
 	font-style:normal;
     text-transform: uppercase;
-	letter-spacing: .5px;
+    letter-spacing: .5px;
 }
 .huge-title {
     bottom: 0;
@@ -238,8 +238,8 @@ blockquote p {
     top: 30%;
     top: 25%\9;
     width: 90%;
-	text-align:left;
-	font-family: 'Raleway', sans-serif;
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
     z-index:99;
 }
 .huge-title p {
@@ -250,7 +250,7 @@ blockquote p {
 	line-height: 1.4em;
 }
 .small { 
-background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
     color: #FFFFFF;
     display: inline;
@@ -275,96 +275,99 @@ background-color: rgba(255, 255, 255, 0.3);
 h1 {
     color: white;
     letter-spacing: -3px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 100px;
-	line-height: 1em;
-	font-weight: 700;
-	padding: 0 0 30px 0;
-	margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    line-height: 1em;
+    font-weight: 700;
+    padding: 0 0 30px 0;
+    margin: 0;
 }
 h2 {
-    color: #ffffff;
-    letter-spacing: -2px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 42px;
-	line-height: 1.2em;
-	font-weight: 700;
-	padding: 0;
-	margin: 0 0 60px;
+    color: black;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: 100;
+    margin: 0 0 60px;
     text-transform: uppercase;
 }
-.border { border-left: 5px solid rgba(255, 255, 255, 0.3); padding: 0 0 0 20px;}
+.border {
+   border-left: 2px solid black; 
+   opacity: 0.3;
+   padding: 0 0 0 20px;
+}
 h3 {
     color: white;
     letter-spacing: -1px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 32px;
-	line-height: 1.2em;
-	font-weight: 700;
-	padding: 0;
-	margin: 0 0 50px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    line-height: 1.2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 50px 0;
     text-transform: uppercase;
 }
 h4 {
     color: rgba(48, 66, 82, 0.7);
     letter-spacing: 0;
-	font-family: 'Raleway', sans-serif;
-	font-size: 23px;
-	line-height: 1.2em;
-	font-weight: 300;
-	padding: 0 0 20px 0;
-	margin: 0;
-	text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    line-height: 1.2em;
+    font-weight: 300;
+    padding: 0 0 20px 0;
+    margin: 0;
+    text-align:left;
 }
 .huge-title h4 {
     letter-spacing: 0;
-	font-family: 'Raleway', sans-serif;
-	font-size: 33px;
-	line-height: 1.2em;
-	font-weight: 500;
-	padding: 0 0 20px 0;
-	margin: 0;
-	text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 33px;
+    line-height: 1.2em;
+    font-weight: 500;
+    padding: 0 0 20px 0;
+    margin: 0;
+    text-align:left;
     color: #ffffff;
     opacity: 0.7;
 }
 h5 {
     color: rgba(255, 255, 255, 1);
     letter-spacing: 0;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	line-height: 1.2em;
-	font-weight: 600;
-	padding: 0 0 10px 0;
-	margin: 0;
-	text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+    margin: 0;
+    text-align:left;
 }
 .shadow { text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
 .container {
     background: none repeat scroll 0 0 transparent;
     z-index: 100;
-	font-family: 'Raleway', sans-serif;
-	width: 100%;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
 }
 .whitecontainer {
-    background: none repeat scroll 0 0 #30ad9e;
-	width: 100%;
-	padding: 80px 0;
-	overflow: auto;
+    background: none repeat scroll 0 0 white;
+    width: 100%;
+    padding: 80px 0;
+    overflow: auto;
 }
 .greycontainer {
     background: none repeat scroll 0 0 #0875bd;
-	width: 100%;
-	padding: 80px 0;
-	overflow: auto;
+    width: 100%;
+    padding: 80px 0;
+    overflow: auto;
 }
 .parallax1 { 
     background-image: url("../img/background2.jpg");
     overflow: auto;
     padding: 80px 0;
     -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
@@ -374,33 +377,33 @@ h5 {
     overflow: auto;
     padding: 80px 0;
     -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 .wrapper {
     background: none repeat scroll 0 0 transparent;
-	width: 100%;
-	position: absolute;
+    width: 100%;
+    position: absolute;
 }
 .hero {
 	margin: 0 auto;
     position: relative;
-	width: 1170px;
-	z-index: 80;
-	text-align:left;
+    width: 1170px;
+    z-index: 80;
+    text-align:left;
     padding: 30px 0px;
 }
 .hero .one_third {
-    border-left: 5px solid black;
+    border-left: 2px solid black;
     opacity: .3;
     padding-left: 2%;
     width: 30.5%;
     margin: 20px 0;
 }
 .hero .one_third_last {
-    border-left: 5px solid black;
+    border-left: 2px solid black;
     padding-left: 2%;
     width: 30.5%;
     margin: 20px 0;
@@ -414,14 +417,17 @@ h5 {
     margin: 0 0 20px;
     opacity: 0.4; 
     color: black;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
 .hero h4 {
     color: black;
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 100;
     opacity: 0.6;
     padding: 0 0 5px 0;
     text-align: left;
+    letter-spacing: 5px
 }
 .hero h5 {
     color: black;
@@ -459,27 +465,26 @@ h5 {
     background-color: white;
 }
 .centered { text-align: center !important; }
-.knob { color: rgba(255,255,255,0.4) !important; }
 .button-box {
 	margin: 0 auto; 
 	display: block; 
 }
 .button-white {
-   border: 2px solid rgba(255,255,255,1);
-   padding: 15px 40px 18px 40px;
-   display: inline-block;
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
-   text-align: center;;
-   transition: all 0.3s ease-in-out;
-   color: rgba(255,255,255,1);
-   text-decoration: none;
-   margin: 20px 0 auto;
-   font-weight: 600;
-   text-transform: uppercase;
-   background-color: rgba(255,255,255,0);
-   letter-spacing: 2px;
-    line-height: 0em;
+ border: 2px solid rgba(255,255,255,1);
+ padding: 15px 40px 18px 40px;
+ display: inline-block;
+ font-family: 'Raleway', sans-serif;
+ font-size: 18px;
+ text-align: center;;
+ transition: all 0.3s ease-in-out;
+ color: rgba(255,255,255,1);
+ text-decoration: none;
+ margin: 20px 0 auto;
+ font-weight: 600;
+ text-transform: uppercase;
+ background-color: rgba(255,255,255,0);
+ letter-spacing: 2px;
+ line-height: 0em;
 }
 .button-white:hover { 
 	background-color: rgba(255, 255, 255, 1); 
@@ -513,31 +518,32 @@ h5 {
     letter-spacing: 1px;
 }
 .button-reverse {
-   padding: 15px 40px;
-   display: inline-block;
-   font-family: 'Raleway', sans-serif;
-   font-size: 16px;
-   text-align: center;;
-   transition: all 0.3s ease-in-out;
-   text-decoration: none;
-   margin: 20px 20px auto 0;
-   font-weight: 700;
-   text-transform: uppercase;
-   background-color: #262B30;
-   color: rgba(255, 255, 255, 1); 
-   letter-spacing: 2px;
-    border-radius: 3px;
-    letter-spacing: 1px;
-    border: none;
+ padding: 15px 40px;
+ display: inline-block;
+ font-family: 'Raleway', sans-serif;
+ font-size: 16px;
+ text-align: center;;
+ font-weight: 100;
+ transition: all 0.3s ease-in-out;
+ text-decoration: none;
+ margin: 20px 20px auto 0;
+ font-weight: 700;
+ text-transform: uppercase;
+ background-color: white;
+ color: black;
+ letter-spacing: 2px;
+ border-radius: 3px;
+ letter-spacing: 3px;
+ border: 1px solid black;
 }
 .button-reverse:hover {   
 	text-decoration: none; 
+    font-size: 20px;
 	background-color: rgba(255,255,255,1);
-	color: #0b86c8;
+	color: black;
 	padding: 15px 40px;
     border-radius: 3px;
     letter-spacing: 1px;
-    border: none;
 }
 #socialsection { width: 90%; height: 40px; opacity: 0; left: 5%; bottom: -1px; position: fixed; z-index: 105; color: #ffffff; border-radius: 3px 3px 0 0; transition: all 0.3s ease-in-out;}
 #socialsection.hide { height: 100px; }
@@ -617,7 +623,7 @@ h5 {
     position: relative;
     padding-bottom: 56.25%;
     height: 0; 
-	overflow: hidden;
+    overflow: hidden;
 }
 .video-container iframe,
 .video-container object,
@@ -627,8 +633,8 @@ h5 {
     left: 0;
     width: 100%;
     height: 100%;
-	margin: auto;
-	right: 0;
+    margin: auto;
+    right: 0;
 }
 .half_column1 {
     float: left;
@@ -661,8 +667,8 @@ h5 {
     text-align: left;
 }
 .infopanel {
-    background: none repeat scroll 0 0 rgba(255,255,255,.3);
     border-radius: 3px;
+    border: 2px solid black;
     box-shadow: none;
     margin-bottom: 1.25em;
     padding: 23px;
@@ -670,20 +676,37 @@ h5 {
     transition: all 0.3s ease-in-out;
 }
 .infopanel:hover {
-    background: none repeat scroll 0 0 rgba(38,43,48, 1);
+    background: none repeat scroll 0 0 lightgrey;
 }
-.infopanel p, .infopanel a {
+.infopanel p{
     font-size: 14px;
     line-height: 1.4em;
+    color: black;
+    font-weight: 100;
+}
+.infopanel p a {
+    font-size: 20px;
+    line-height: 3em;
+    color: black;
+    font-weight: 100;
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+.infopanel a:hover{
+    color: black;
 }
 .infopanel h5 { 
     font-size: 16px;
+    color: black;
     margin-top: 17px;
+    letter-spacing: 3px;
+    font-weight: 100;
     padding: 0;
     text-transform: uppercase;
 }
 .eye { 
-    background-image: url("../img/magnify.gif");
+    background-image: url("../img/magnify.jpg©");
     background-position: center center;
     width: 99%;
     height: auto;
@@ -693,7 +716,7 @@ h5 {
     margin: 0;
 }
 #Portfolio .one_third_last, #Portfolio .one_third {margin-bottom: 0; margin-top: 5%; }
- .one_third_last img, .one_third img, .half_column1 img, .half_column2 img, .hero img { width: 100%; height: auto; }  
+.one_third_last img, .one_third img, .half_column1 img, .half_column2 img, .hero img { width: 100%; height: auto; }  
 .one_third_last h2, .one_third h2 { font-size: 32px; padding: 0 0 10px 0; opacity: 0.4;}
 .one_third_last h3, .one_third h3 { font-size: 16px; margin: 0px; font-weight: 500; }
 .two_third_last h3 { margin: 1px 0 10px 0;}
@@ -823,7 +846,7 @@ input[type=text] {
     opacity: 0.3;
     transition: all 0.3s ease-in-out;
     outline: none;
-	}
+}
 input[type=text]:focus {
     opacity: 1.0;
     -webkit-appearance: none;
@@ -890,7 +913,7 @@ Menu Styling
 	text-transform: uppercase;
 	color: #fbfbfb;
 }
-.menu ul li a { color: #fbfbfb; text-decoration: none; padding-top: 13px; font-weight: 700; letter-spacing: 1px; transition: all 0.2s ease-in-out; font-size: 14px;}
+.menu ul li a { color: #fbfbfb; text-decoration: none; padding-top: 13px; font-weight: 100; letter-spacing: 3px; transition: all 0.2s ease-in-out; font-size: 14px;}
 .menu ul li a:hover { color: #fbfbfb; text-decoration: none; border-top: 5px solid #fbfbfb; border-bottom: 0px solid transparent; }
 .menu ul li a.cta { color: #ffffff; text-decoration: none; padding: 10px 20px; font-weight: 700; background-color: #0b86c8 ; transition: all 0.2s ease-in-out; border-bottom: 0px solid transparent; border-radius: 3px;}
 .menu ul li a:hover.cta { color: #0b86c8; padding: 10px 20px; background-color: #ffffff ; text-decoration: none; border-top: 0px solid #fbfbfb; border-bottom: 0px solid transparent; border-radius: 3px;}
@@ -924,14 +947,21 @@ Menu Styling
     line-height: 1em;
     list-style: none outside none;
     margin-left: 0;
+    font-weight: 100;
     padding: 15px 0 15px 0;
     text-align: center;
     display: list-item;
     border-radius: 3px;
     transition: all 0.2s ease-in-out;
 }
-.nav ul li a, .nav ul li a:hover { font-size: 14px; border-bottom: 0px solid transparent; }
-.nav ul li a:hover { color: #ffffff; border-top: 0px solid transparent; }
+.nav ul li a, .nav ul li a:hover { 
+    font-size: 14px;
+    border-bottom: 0px solid transparent;
+}
+.nav ul li a:hover { 
+    color: #ffffff; 
+    border-top: 0px solid transparent; 
+}
 .nav ul li:hover { background-color: grey; }
 /*
 ==============================================
@@ -966,32 +996,32 @@ Responsive Syling
     #CV .one_third h2 { margin: 0; }
     .center-align { margin-left: 4%; }
     .one_third {
-    float: left;
-    text-align: left;
-    width: 100%;
-    margin-right: 0%;
+        float: left;
+        text-align: left;
+        width: 100%;
+        margin-right: 0%;
     }
     .one_third.skill {
-    float: left;
-    text-align: left;
-    width: 49%;
-    margin-right: 1%;
+        float: left;
+        text-align: left;
+        width: 49%;
+        margin-right: 1%;
     }
     .one_third_last {
-    float: left;
-    text-align: left;
-    width: 100%;
+        float: left;
+        text-align: left;
+        width: 100%;
     }
     .one_third_last.skill {
-    float: left;
-    text-align: left;
-    width: 49%;
-    margin-right: 0%;
+        float: left;
+        text-align: left;
+        width: 49%;
+        margin-right: 0%;
     }
     .two_third_last {
-    float: left;
-    text-align: left;
-    width: 100%;
+        float: left;
+        text-align: left;
+        width: 100%;
     }
     .huge-title { width: 80%; top: 25%;}
     blockquote:before { width: 10%; }
@@ -1024,13 +1054,13 @@ Responsive Syling
 }
 @media all and (max-width: 568px) {
     .one_third_last.skill, .one_third.skill {
-    float: none;
-    margin: 40px auto 0;
-    text-align: left;
-    width: 70%;
+        float: none;
+        margin: 40px auto 0;
+        text-align: left;
+        width: 70%;
     }
     .nav ul li {
-    padding: 8px 0 8px 0;
+        padding: 8px 0 8px 0;
     }
     .hero .one_third, .hero .one_third_last { width: 100%; }
     blockquote p { font-size: 24px; width: 80%; }
@@ -1055,9 +1085,11 @@ Responsive Syling
         width: 100%;
     }
     .small {
-    clear: left;
-    display: table;
-    margin-top: 20px;
-    position: relative;
+        clear: left;
+        display: table;
+        margin-top: 20px;
+        position: relative;
     }
 }
+
+
