@@ -583,8 +583,9 @@ h5 {
     width: 20px;
 }
 #menu-button {
-    background-color: #262B30;
-    border-radius: 0 0 3px 3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0 0 0px 0px;
     float: none;
     left: 50%;
     margin-left: -40px;
@@ -602,8 +603,8 @@ h5 {
     border-bottom: 2px solid #ffffff;
 }
 #menu-button:before {
-    border-bottom: 2px solid #FFFFFF;
-    border-top: 7px double #FFFFFF;
+    border-bottom: 2px solid black;
+    border-top: 7px double black;
     content: "";
     height: 12px;
     left: 20px;
@@ -914,7 +915,7 @@ Menu Styling
 	text-transform: uppercase;
 	color: #fbfbfb;
 }
-.menu ul li a { color: #fbfbfb; text-decoration: none; padding-top: 13px; font-weight: 100; letter-spacing: 3px; transition: all 0.2s ease-in-out; font-size: 14px;}
+.menu ul li a { color: black; text-decoration: none; padding-top: 13px; font-weight: 100; letter-spacing: 3px; transition: all 0.2s ease-in-out; font-size: 14px;}
 .menu ul li a:hover { color: #fbfbfb; text-decoration: none; border-top: 5px solid #fbfbfb; border-bottom: 0px solid transparent; }
 .menu ul li a.cta { color: #ffffff; text-decoration: none; padding: 10px 20px; font-weight: 700; background-color: #0b86c8 ; transition: all 0.2s ease-in-out; border-bottom: 0px solid transparent; border-radius: 3px;}
 .menu ul li a:hover.cta { color: #0b86c8; padding: 10px 20px; background-color: #ffffff ; text-decoration: none; border-top: 0px solid #fbfbfb; border-bottom: 0px solid transparent; border-radius: 3px;}
@@ -933,7 +934,7 @@ Menu Styling
     display: none;
     padding: 10px 15%;
     margin: 0 auto;
-    background: rgba(38,43,48,1);
+    background: white;
     box-shadow: 0 0 70px 40px rgba(0, 0, 0, 0.4);
 }
 .nav ul {
@@ -1053,13 +1054,23 @@ Responsive Syling
     #godown { display: none; }
     .hero .one_third, .hero .one_third_last { width: 47%; }
 }
-@media all and (max-width: 568px) {
+@media all and (max-width: 640px) {
     .one_third_last.skill, .one_third.skill {
         float: none;
         margin: 40px auto 0;
         text-align: left;
         width: 70%;
     }
+
+    .parallax1 {
+        background-image: none;
+        background-color: transparent black;
+    }
+
+    canvas {
+        width: 100%;
+    }
+
     .nav ul li {
         padding: 8px 0 8px 0;
     }
@@ -1098,4 +1109,5 @@ Responsive Syling
     padding: 0 0 0 20px;
 
 }
+
 
