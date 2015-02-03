@@ -24,10 +24,10 @@ footer { background-color: #262B30; padding: 20px 0 50px 0; }
 footer p {
 	color: #ffffff;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
+	font-weight: 100;
 	font-size: 14px;
 	line-height: 1.6em;
-    text-align: center;
+    text-align: left;
 }
 header {
     width: 100%;
@@ -352,7 +352,7 @@ h5 {
 .whitecontainer {
     background: none repeat scroll 0 0 white;
     width: 100%;
-    padding: 80px 0;
+    padding: 40px 0;
     overflow: auto;
 }
 .greycontainer {
@@ -518,30 +518,29 @@ h5 {
     letter-spacing: 1px;
 }
 .button-reverse {
- padding: 15px 40px;
- display: inline-block;
- font-family: 'Raleway', sans-serif;
- font-size: 16px;
- text-align: center;;
- font-weight: 100;
- transition: all 0.3s ease-in-out;
- text-decoration: none;
- margin: 20px 20px auto 0;
- font-weight: 700;
- text-transform: uppercase;
- background-color: white;
- color: black;
- letter-spacing: 2px;
- border-radius: 3px;
- letter-spacing: 3px;
- border: 1px solid black;
+    padding: 10px 40px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;;
+    font-weight: 100;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    margin: 20px 20px auto 0;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    border: 1px solid black;
 }
 .button-reverse:hover {   
 	text-decoration: none; 
     font-size: 20px;
-	background-color: rgba(255,255,255,1);
-	color: black;
-	padding: 15px 40px;
+    font-weight: 400;
+    background-color: rgba(255,255,255,1);
+    color: black;
+    padding: 10px 40px;
     border-radius: 3px;
     letter-spacing: 1px;
 }

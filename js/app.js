@@ -115,7 +115,7 @@
                     this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
                     this.g.stroke();
 
-                    this.g.lineWidth = 2;
+                    this.g.lineWidth = 5;
                     this.g.beginPath();
                     this.g.strokeStyle = this.o.fgColor;
                     this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
