@@ -1032,6 +1032,9 @@ Responsive Syling
     .hero .one_third, .hero .one_third_last { width: 47%; }
 }
 @media all and (max-width: 640px) {
+    .knob {
+        font-size: 20px !important;
+    }
 
     .parallax1 p, .parallax1 h2, .parallax2 p, .parallax2 h2 { color: #ffffff; }
     .parallax2 {
