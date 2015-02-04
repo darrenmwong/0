@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS Document for UNO Personal page - Copyright 2014 Jonathan Atkinson http://cr3ativ.com */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -7,7 +6,6 @@
 }
 body, html {
 	background-color: #262B30;
-	/*background: url("../img/background4.jpg") no-repeat scroll 0 0 / cover transparent;  <-- you could remove the color and use an image */
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
@@ -20,7 +18,8 @@ body, html {
     text-rendering: optimizeLegibility;
     background-position: center center;
 }
-footer { background-color: #262B30; padding: 20px 0 50px 0; }
+footer { background-color: #262B30; padding: 10px 0 50px 0; }
+
 footer p {
 	color: #ffffff;
 	font-family: 'Raleway', sans-serif;
@@ -181,31 +180,6 @@ blockquote p {
     margin: 0;
     width: 90%;
     color: #ffffff;
-}
-.testimonials blockquote:before {
-    display: none;
-}
-.testimonials blockquote {
-    border: 0 none;
-    display: block;
-    margin: 0;
-    padding: 0 0 20px 0;
-}
-.testimonials blockquote p {
-    width: 100%;
-    text-align:left;
-    padding-bottom: 30px;
-}
-.testimonials blockquote cite {
-	color: #ffffff;
-    font-family: 'Raleway',sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    opacity:0.7;
-    -webkit-backface-visibility:hidden;
 }
 #godown {
 	bottom: 20px;
@@ -1115,7 +1089,7 @@ Responsive Syling
     }
 
     .button-reverse {
-        margin: 20px 20px auto 22%;
+        width: 100%;
     }
 }
 
