@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "description": "Gutted",
+  "main": "gulp.js",
+  "dependencies": {
+    "gulp": "~3.8.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/darrenmwong/0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darrenmwong/0/issues"
+  },
+  "homepage": "https://github.com/darrenmwong/0"
+}
