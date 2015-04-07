@@ -25,6 +25,8 @@ gulp.task('javascripts', function() {
 
 gulp.task('vendor', function() {
 	gulp.src([
+		'bower_components/modernizr/modernizr.js',
+		'bower_components/jquery/src/jquery.js',
 		'bower_components/requirejs/require.js',
 		'bower_components/famous/src/core/*.js',
 		'bower_components/famous/src/views/*.js'
