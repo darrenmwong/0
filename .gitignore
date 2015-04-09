@@ -16,4 +16,5 @@ pids
 node_modules/
 .htaccess
 .editorconfig
-
+node_modules/
+bower_components/

@@ -20,22 +20,39 @@ gulp.task('javascripts', function() {
 	.pipe(plugins.rename({suffix: '.min'}))
 	.pipe(plugins.uglify())
 	.pipe(gulp.dest(javascripts))
+  .pipe(plugins.notify({ message: "Javascripts minified"}))
+  .pipe(plugins.livereload());
 });
 
+// gulp.task('css', function() {
+// 	gulp.src(['bower_components/famous/dist/famous.css'])
+// 	.pipe(plugins.concat('main.css'))
+// 	.pipe(gulp.dest(stylesheets))
+// 	.pipe(plugins.rename({suffix: '.min'}))
+// 	.pipe(plugins.uglify())
+// 	.pipe(gulp.dest(stylesheets))
+//   .pipe(plugins.notify({ message: "CSS minified"}))
+//   .pipe(plugins.livereload());
+// });
 
 gulp.task('vendor', function() {
 	gulp.src([
-		'bower_components/modernizr/modernizr.js',
-		'bower_components/jquery/src/jquery.js',
-		'bower_components/requirejs/require.js',
-		'bower_components/famous/src/core/*.js',
-		'bower_components/famous/src/views/*.js'
+		'bower_components/jquery/dist/jquery.js',
+		'bower_components/famous/dist/*.js',
+		'bower_components/famous/examples/assets/lib/*.js'
 		])
 	.pipe(plugins.concat('vendor.js'))
 	.pipe(gulp.dest(javascripts))
 	.pipe(plugins.rename({suffix: '.min'}))
 	.pipe(plugins.uglify())
 	.pipe(gulp.dest(javascripts))
+  .pipe(plugins.notify({ message: "Vendor minified"}))
 });
 
-gulp.task('default', ['javascripts', 'vendor']);
+gulp.task('watch', function() {
+    plugins.livereload.listen();
+    gulp.watch('src/css/*.css', ['css']);
+    gulp.watch('src/js/*.js', ['javascripts']);
+});
+
+gulp.task('default', ['javascripts', 'vendor', 'watch']);
