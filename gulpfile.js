@@ -1,6 +1,3 @@
-'use strict';
-// generated on 2015-05-13 using generator-gulp-foundation 0.0.3
-
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
@@ -20,7 +17,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('app/scripts/**/*.js')
+    return gulp.src('js/**/*.js')
         .pipe($.jshint())
         .pipe($.jshint.reporter(require('jshint-stylish')))
         .pipe($.size());
