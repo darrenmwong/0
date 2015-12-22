@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { render } from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 import Navigation from './global/Navigation';
@@ -7,11 +8,12 @@ import Work from './pages/Work';
 import Random from './pages/Random';
 const mountNode = document.getElementById('app');
 
+
 class App extends React.Component {
   render() {
     return (
         <div>
-          <Navigation />
+            <Navigation />
           <div className="content">
             {this.props.children}
           </div>

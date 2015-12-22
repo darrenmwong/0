@@ -1,0 +1,32 @@
+.example-enter {
+  opacity: 0.01;
+  transform: translate3d(0,0,0);
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 10000ms ease-in-out;
+  transform: translate3d(200px,0,0);
+}
+
+.example-leave {
+  opacity: 1;
+  transform: translate3d(200px,0,0);
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 10000ms ease-in-out;
+  transform: translate3d(200px,0,0);
+}
+
+.example-appear {
+  opacity: 0.01;
+  transform: translate3d(0,100px,0);
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+  transform: translate3d(0,0,0);
+}

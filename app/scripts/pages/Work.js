@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Work extends React.Component {
   constructor(props) {
@@ -8,9 +9,12 @@ class Work extends React.Component {
     console.log('work');
   }
   render() {
-    return ( <div>
+    return (
+            <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300} transitionAppear={true} transitionAppearTimeout={500}>
+            <div>
               <h1>Work Page</h1>
             </div>
+            </ReactCSSTransitionGroup>
             )
   }
 }
