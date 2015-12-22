@@ -3,6 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { render } from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 import Navigation from './global/Navigation';
+import Footer from './global/Footer';
 import About from './pages/About';
 import Work from './pages/Work';
 import Random from './pages/Random';
@@ -17,6 +18,7 @@ class App extends React.Component {
           <div className="content">
             {this.props.children}
           </div>
+            <Footer />
         </div>
 
         );

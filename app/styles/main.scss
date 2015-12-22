@@ -1,11 +1,15 @@
+@import './global/Normalize.css';
 @import './global/Navigation.scss';
 @import './global/PageTransitions.scss';
+@import './global/Footer.scss';
+
 
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  height: 100vh;
 }
 
 

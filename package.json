@@ -39,12 +39,6 @@
   "scripts": {
     "test": "jest"
   },
-  "jest": {
-    "scriptPreprocessor": "<rootDir>/preprocessor.js",
-    "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/react"
-    ]
-  },
   "browserify": {
     "transform": [
       "browserify-shim",
