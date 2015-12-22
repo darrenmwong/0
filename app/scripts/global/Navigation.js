@@ -32,17 +32,23 @@ class NavList extends Navigation {
   render() {
     return (
         <ul>
-          {this.props.items.map((item) => {
-            return (
-                <li key={item.id} data={item}>
-                  <Link to={item}>{item}</Link>
-                </li>
-                   )
+          {this.props.items.map((item, index) => {
+            return ( <NavLinkTo data={item} key={index} /> )
           })}
         </ul>
         );
   }
 };
+
+class NavLinkTo extends NavList {
+  render() {
+    return (
+         <li>
+           <Link to={this.props.data}>{this.props.data}</Link>
+         </li>
+        )
+  }
+}
 
 NavList.defaultProps = { items: ["Work", "Random", "About"] };
 export default Navigation;
