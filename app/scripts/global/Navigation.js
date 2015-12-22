@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import { Router, Route, Link } from 'react-router';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -21,23 +22,27 @@ class Navigation extends React.Component {
           <span></span>
           <span></span>
         </div>
-        <List />
+        <NavList />
       </nav>
       )
   }
 }
 
-class List extends Navigation {
+class NavList extends Navigation {
   render() {
     return (
         <ul>
           {this.props.items.map((item) => {
-            return (<li key={item.id} data={item}><a href="#">{item}</a></li>)
+            return (
+                <li key={item.id} data={item}>
+                  <Link to={item}>{item}</Link>
+                </li>
+                   )
           })}
         </ul>
         );
   }
 };
 
-List.defaultProps = { items: ["Home", "Work", "About", "Contact"] };
+NavList.defaultProps = { items: ["Work", "Random", "About"] };
 export default Navigation;
