@@ -1,0 +1,96 @@
+#app {
+  .navigation {
+    font-family: 'Roboto' !important;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    transition: cubic-bezier(.15,.84,.66,.87) 300ms all;
+
+    &.active {
+      .fill {
+        transform: skew(120deg, 120deg) scale(5);
+        background: #fd5c63;
+      }
+      .burger {
+        span:nth-child(1) {
+          transform: translate( 4px, 15px) rotate(135deg);
+          background: #fff;
+        }
+        span:nth-child(2) {
+          transform: scale(0.01);
+          background: #fff;
+          opacity: 0;
+        }
+        span:nth-child(3) {
+          transform: translate( 4px, -15px) rotate(-135deg);
+          background: #fff;
+        }
+      }
+      ul {
+        li {
+          transform: translate3d(0,0,0);
+          visibility: initial;
+          opacity: 1;
+        }
+      }
+    }
+    .fill {
+      z-index: -1;
+      background: #fd5c63;
+      transform: translate3d(-100px, -100px, 0) skew(120deg, 1deg);
+      transition: cubic-bezier(.15,.84,.66,.87) 400ms all;
+      position: absolute;
+      height: 80px;
+      width: 80px;
+    }
+    .burger {
+      position: absolute;
+      z-index: 100;
+      height: 40px;
+      width: 40px;
+      left: 20px;
+      top: 20px;
+      cursor: pointer;
+      span:nth-child(2) {
+        top: 15px;
+      }
+      span:nth-child(3) {
+        top: 30px;
+      }
+      span {
+        position: absolute;
+        transition: cubic-bezier(.15,.84,.66,.87) 300ms all;
+        transform: translate3d(0,0,0);
+        width: 100%;
+        height: 5px;
+        background: black;
+      }
+    }
+    ul {
+      list-style-type: none;
+      transform: translate3d(-15px, 80px, 0);
+      li {
+        padding-top: 10px;
+        transition: cubic-bezier(.15,.84,.66,.87) 300ms all;
+        transform: translate3d(-25px, -25px, 0);
+        transition-delay: 200ms;
+        opacity: 0;
+        visibility: hidden;
+        &:nth-child(2) {
+          transition-delay: 300ms;
+        }
+        &:nth-child(3) {
+          transition-delay: 400ms;
+        }
+        &:nth-child(4) {
+          transition-delay: 500ms;
+        }
+        a {
+          color: #fff;
+          pointer: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
