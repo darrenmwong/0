@@ -99,14 +99,14 @@ gulp.task('images', function() {
 });
 
 // Fonts
-gulp.task('fonts', function() {
+// gulp.task('fonts', function() {
     
-    return gulp.src(require('main-bower-files')({
-            filter: '**/*.{eot,svg,ttf,woff,woff2}'
-        }).concat('app/fonts/**/*'))
-        .pipe(gulp.dest('dist/fonts'));
+//     return gulp.src(require('main-bower-files')({
+//             filter: '**/*.{eot,svg,ttf,woff,woff2}'
+//         }).concat('app/fonts/**/*'))
+//         .pipe(gulp.dest('dist/fonts'));
     
-});
+// });
 
 // Clean
 gulp.task('clean', function(cb) {
@@ -164,7 +164,7 @@ gulp.task('extras', function() {
 });
 
 // Watch
-gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
+gulp.task('watch', ['html', 'bundle'], function() {
 
     browserSync({
         notify: false,
@@ -191,7 +191,7 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
 });
 
 // Build
-gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], function() {
+gulp.task('build', ['html', 'buildBundle', 'images', 'extras'], function() {
     gulp.src('dist/scripts/app.js')
         .pipe($.uglify())
         .pipe($.stripDebug())
