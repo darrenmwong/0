@@ -1,118 +1,131 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var gutil = require('gulp-util');
+var gulp = require('gulp'),
+    babelify = require('babelify'),
+    browserify = require('browserify'),
+    connect = require('gulp-connect'),
+    cssnano = require('gulp-cssnano'),
+    fileinclude = require('gulp-file-include'),
+    gulpLoadPlugins = require('gulp-load-plugins'),
+    order = require("gulp-order"),
+    source = require('vinyl-source-stream'),
+    plugins = gulpLoadPlugins();
 
-// load plugins
-var $ = require('gulp-load-plugins')();
+function onError(error){
+  plugins.notify().write(error.message);
+  this.emit('end'); // Keep gulp from hanging on this task
+}
 
-gulp.task('styles', function () {
-    return gulp.src('css/main.css')
-        .pipe($.sass({errLogToConsole: true}))
-        .pipe($.autoprefixer('last 1 version'))
-        .pipe(gulp.dest('css/'))
-        .pipe(reload({stream:true}))
-        .pipe($.size())
-        .pipe($.notify("Compilation complete."));;
+// Build browserify and jsx
+gulp.task('scripts', function() {
+  browserify({
+    entries: ['./src/js/index.js'],
+    extensions: ['.js'],
+    debug: true
+  })
+  .transform(babelify.configure({
+    presets : ["es2015"]
+  }))
+  .bundle()
+  .on('error', onError)
+  .pipe(source('bundle.js'))
+  .pipe(gulp.dest('dist/scripts'))
+  .pipe(plugins.notify('Scripts Gulped'));
 });
 
-gulp.task('scripts', function () {
-    return gulp.src('js/**/*.js')
-        .pipe($.jshint())
-        .pipe($.jshint.reporter(require('jshint-stylish')))
-        .pipe($.size());
+// Copies over fonts to dist
+gulp.task('fonts', function() {
+  return gulp.src([
+    './src/fonts/*'
+  ])
+  .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('html', ['styles', 'scripts'], function () {
-    var jsFilter = $.filter('**/*.js');
-    var cssFilter = $.filter('**/*.css');
-
-    return gulp.src('app/*.html')
-        .pipe($.useref.assets())
-        .pipe(jsFilter)
-        .pipe($.uglify())
-        .pipe(jsFilter.restore())
-        .pipe(cssFilter)
-        .pipe($.csso())
-        .pipe(cssFilter.restore())
-        .pipe($.useref.restore())
-        .pipe($.useref())
-        .pipe(gulp.dest('dist'))
-        .pipe($.size());
+gulp.task('images', function() {
+  return gulp.src([
+    './src/img/**/*'
+  ])
+  .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('images', function () {
-    return gulp.src('app/images/**/*')
-        .pipe($.cache($.imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true
-        })))
-        .pipe(gulp.dest('dist/images'))
-        .pipe(reload({stream:true, once:true}))
-        .pipe($.size());
+gulp.task('vendor', function() {
+  gulp.src([
+      //add sources here
+  ])
+    .bundle()
+    .pipe(source('vendor.js'))
+    .pipe(gulp.dest('dist/scripts'));
 });
 
-gulp.task('fonts', function () {
-    var streamqueue = require('streamqueue');
-    return streamqueue({objectMode: true},
-        $.bowerFiles(),
-        gulp.src('app/fonts/**/*')
-    )
-        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
-        .pipe($.flatten())
-        .pipe(gulp.dest('dist/fonts'))
-        .pipe($.size());
+// Gulp include partial files
+gulp.task('fileinclude', function() {
+  gulp.src(['./src/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
 });
 
-gulp.task('clean', function () {
-    return gulp.src(['app/styles/main.css', 'dist'], { read: false }).pipe($.clean());
+// Sass Styles . styles is only one level deep. CSS will be library assets
+// that will compile first
+gulp.task('styles', function() {
+  gulp.src(['./src/css/main.scss'])
+  .pipe(plugins.sass({
+    outputStyle: 'expanded' // nested, expanded, compact, compressed
+  }).on('error', onError))
+  .pipe(plugins.autoprefixer())
+  .pipe(plugins.concat('style.css'))
+  .pipe(cssnano())
+  .pipe(gulp.dest('dist/styles'))
+  .pipe(plugins.notify('Styles Gulped'));
 });
 
-gulp.task('build', ['html', 'images', 'fonts']);
 
-gulp.task('default', ['clean'], function () {
-    gulp.start('build');
+// Only used for live reload. Looks for compiled file ./dist
+// change in liveConnect task.
+gulp.task('html', function() {
+  gulp.src('*.html')
+    .pipe(connect.reload())
+    .pipe(plugins.notify('HTML Reloaded'));
 });
 
-gulp.task('serve', ['styles'], function () {
-    browserSync.init(null, {
-        server: {
-            baseDir: 'app',
-            directory: true
-        },
-        debugInfo: false,
-        open: false,
-        hostnameSuffix: ".xip.io"
-    }, function (err, bs) {
-        require('opn')(bs.options.url);
-        console.log('Started connect web server on ' + bs.options.url);
-    });
+gulp.task('serve', function() {
+  connect.server({
+    root: './'
+  });
+  gulp.watch('./src/css/**/*.scss', ['styles']);
+  gulp.watch('./src/js/**/*.js', ['scripts']);
+  gulp.watch(['./src/*.html', './src/partials/*.html'], ['fileinclude']);
 });
 
-// inject bower components
-gulp.task('wiredep', function () {
-    var wiredep = require('wiredep').stream;
-    gulp.src('app/styles/*.scss')
-        .pipe(wiredep({
-            directory: 'app/bower_components'
-        }))
-        .pipe(gulp.dest('app/styles'));
-    gulp.src('app/*.html')
-        .pipe(wiredep({
-            directory: 'app/bower_components',
-            exclude: ['bootstrap-sass-official']
-        }))
-        .pipe(gulp.dest('app'));
+gulp.task('liveConnect', function() {
+  connect.server({
+    root: './',
+    port: 8080,
+    livereload: true
+  });
+  gulp.watch('./src/css/**/*.scss', ['styles']);
+  gulp.watch('./src/js/**/*.js', ['scripts']);
+  gulp.watch(['./src/*.html', './src/partials/*.html'], ['fileinclude', 'html']);
+  gulp.watch(['dist/**/*.js', 'dist/**/*.css'], ['html']); //Needs to watch when its compiled
+
 });
 
-gulp.task('watch', ['serve'], function () {
- 
-    // watch for changes
-    gulp.watch(['app/*.html'], reload);
- 
-    gulp.watch('app/styles/**/*.scss', ['styles']);
-    gulp.watch('app/scripts/**/*.js', ['scripts']);
-    gulp.watch('app/images/**/*', ['images']);
-    gulp.watch('bower.json', ['wiredep']);
-});
+gulp.task('default',
+  [
+    'fileinclude',
+    'fonts',
+    'images',
+    'scripts',
+    'styles',
+    'serve'
+  ]);
+gulp.task('live',
+  [
+    'liveConnect',
+    'fileinclude',
+    'fonts',
+    'images',
+    'styles',
+    'scripts'
+  ]);
+

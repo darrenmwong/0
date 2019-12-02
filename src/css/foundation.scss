@@ -1,0 +1,18 @@
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
+@include foundation-everything;
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+
+$include-xl-html-block-grid-classes: true;
+$include-xl-html-grid-classes: true;
+
+.column:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+  float: left !important;
+}
+
+.row .column,
+.row .columns {
+  margin-right: -1px;
+  width: auto;
+}

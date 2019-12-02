@@ -1,0 +1,35 @@
+//Standard Mixins
+
+@mixin breakpoint($class) {
+  @if $class == small {
+    @media screen and (max-width: 40em) { @content; }
+  }
+  @else if $class == small-landscape {
+    @media screen and (max-width: 46em) and (orientation : landscape) { @content; }
+  }
+  @else if $class == medium {
+    @media screen and (max-width: 64em) { @content; }
+  }
+  @else if $class == large {
+    @media screen and (max-width: 90em) { @content; }
+  }
+  @else if $class == lardium {
+    @media screen and (max-width: 80em) { @content; }
+  }
+  @else {
+    @warn "Breakpoint mixin not supported";
+  }
+}
+
+@mixin background() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin flexcenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
