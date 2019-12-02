@@ -1,0 +1,41 @@
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    ul {
+        position: absolute;
+        right: 80px;
+        top: 20px;
+        margin: 0;
+        display: inline;
+        li {
+            margin: 0 10px;
+            display: inline;
+            a { 
+                color: white;
+                text-decoration: none;
+                transition: 300ms ease-in-out all;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    background: white;
+                    height: 1px;
+                    width: 0;
+                    transition: 300ms ease-in-out all;
+                }
+                &:hover {
+                    opacity: 0.6;
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,11 +1,26 @@
 @import 'normalize';
+@import 'foundation';
 @import 'vars';
 @import 'mixins';
 @import 'fonts';
 @import 'typography';
 
+@import 'nav';
+@import 'hero';
+@import 'work';
+
 body {
   margin: 0;
+}
+
+section {
+  height: 100vh;
+  min-height: 800px;
+  width: 100vw;
+  background: black;
+    h1 {
+    color: white;
+  }
 }
 
 
