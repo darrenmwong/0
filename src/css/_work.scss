@@ -11,6 +11,10 @@
         filter: grayscale(100%);
         min-height: 300px;
         min-width: 100px;
+        transition: 500ms ease-in-out all;
+        &:hover {
+            opacity: 0.3;
+        }
 
     }
 }
