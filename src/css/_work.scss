@@ -8,10 +8,11 @@
     img {
         height: 100%;
         width: 100%;
-        filter: grayscale(100%);
-        min-height: 300px;
+        filter: grayscale(100%) invert(10000%);
+        min-height: 200px;
         min-width: 100px;
         transition: 500ms ease-in-out all;
+        padding: 30px;
         &:hover {
             opacity: 0.3;
         }
