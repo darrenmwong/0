@@ -1,5 +1,5 @@
 #work {
-    min-height: 100vh;
+    height: max-content;
     width: 100%;
     .container {
         width: 100%;
@@ -9,13 +9,43 @@
         height: 100%;
         width: 100%;
         filter: grayscale(100%) invert(10000%);
-        min-height: 200px;
-        min-width: 100px;
+        object-fit: contain;
+        min-height: 125px;
         transition: 500ms ease-in-out all;
         padding: 30px;
+        margin: 25px 0;
         &:hover {
             opacity: 0.3;
         }
-
+    }
+    .work-info {
+        @include flexcenter;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: 300ms ease-in-out all;
+        opacity: 0;
+        background: $teal;
+        p {
+            transition-delay: 100ms;
+            transform: translateY(10px);
+            transition: 300ms ease-in-out all;
+        }
+    }
+    a {
+        position: relative;
+        display: block;
+        overflow: none;
+        height: 100%;
+        width: 100%;
+        &:hover {
+            .work-info {
+                opacity: 1;
+                p {
+                    transform: translateY(0);
+                }
+            }
+        }
     }
 }
