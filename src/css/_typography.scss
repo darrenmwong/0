@@ -5,10 +5,18 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+li {
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
-p {
-    color: black;
+ul {
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    li {
+        text-decoration: none;
+        list-style-type: none;
+    }
 }

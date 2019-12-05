@@ -14,7 +14,7 @@ nav {
         li {
             margin: 0 10px;
             display: inline;
-            a { 
+            a {
                 color: white;
                 text-decoration: none;
                 transition: 300ms ease-in-out all;
@@ -30,7 +30,7 @@ nav {
                     transition: 300ms ease-in-out all;
                 }
                 &:hover {
-                    opacity: 0.6;
+                    color: $teal;
                     &:before {
                         width: 100%;
                     }

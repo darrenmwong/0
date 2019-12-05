@@ -5,6 +5,9 @@
         width: 100%;
         height: 100%;
     }
+    .work-headline-container {
+        margin-bottom: 50px;
+    }
     img {
         height: 100%;
         width: 100%;
@@ -24,13 +27,14 @@
         height: 100%;
         width: 100%;
         transform: translateY(-100%);
-        transition: 300ms ease-in-out all;
+        transition: 500ms ease-in-out all;
         opacity: 0;
         background: $teal;
         p {
             transition-delay: 100ms;
             transform: translateY(10px);
             transition: 300ms ease-in-out all;
+            color: white;
         }
     }
     a {

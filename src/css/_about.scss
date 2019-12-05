@@ -1,0 +1,26 @@
+#about {
+    height: max-content;
+    .container {
+        margin: 50px 0;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    p {
+        padding-right: 50px;
+    }
+    .about-list {
+        padding-top: 58px;
+        ul {
+            li {
+                margin: 15px 0;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+        h3 {
+            margin: 20px 0;
+        }
+    }
+}
