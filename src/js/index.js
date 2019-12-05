@@ -1,13 +1,13 @@
 import $ from 'jquery';
 window.$ = window.jQuery = $; // Making these bad boys global so we dont require them anywhere else
 
-import Example from './components/_Example.js';
+import Nav from './components/_Nav.js';
 
 (function($) {
 
   var App =  {
     init: function() {
-        Example();
+        Nav();
     }
   }
 
