@@ -8,6 +8,7 @@
 @import 'hero';
 @import 'work';
 @import 'about';
+@import 'contact';
 body {
     margin: 0;
     background: black;
@@ -15,7 +16,6 @@ body {
 
 section {
     height: max-content;
-    min-height: 800px;
     width: 100vw;
     background: black;
     h1 {

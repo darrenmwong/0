@@ -1,0 +1,30 @@
+#contact {
+    height: max-content;
+    height: 300px;
+    width: 100%;
+    .container {
+        margin-top: 100px;
+        h1 {
+            margin-bottom: 25px;
+        }
+        ul {
+            @include flexcenter;
+            li {
+                display: inline;
+                margin: 25px;
+                a {
+                    svg {
+                        height: 50px;
+                        fill: grey;
+                        transition: 500ms ease-in-out all;
+                    }
+                    &:hover {
+                        svg {
+                            fill: $teal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

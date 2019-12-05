@@ -1,5 +1,6 @@
 .hero {
     @include flexcenter;
-    height: 100vh;
-    min-height: 100vh;
+    h1 {
+        padding: 100px 0;
+    }
 }
